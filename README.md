@@ -27,6 +27,13 @@ ruby <(curl -fsSk https://raw.github.com/mxcl/homebrew/go)
 brew doctor
 ```
 
+install tmux
+--
+
+```
+brew install tmux
+```
+
 install ctag
 --
 
