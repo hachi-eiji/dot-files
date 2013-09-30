@@ -7,6 +7,7 @@ set shiftwidth=4
 set autoindent
 set antialias
 set backupdir=/tmp
+set directory=/tmp
 syntax on
 set t_Co=256
 colorscheme jellybeans
