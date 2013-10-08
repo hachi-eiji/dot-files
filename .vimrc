@@ -14,6 +14,7 @@ colorscheme jellybeans
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'gmarik/vundle'
 Bundle 'kana/vim-fakeclip'
 Bundle 'pangloss/vim-javascript'
