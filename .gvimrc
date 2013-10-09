@@ -5,3 +5,4 @@ set backupdir=/tmp
 "http://www.vim.org/scripts/script.php?script_id=2555
 colorscheme jellybeans
 autocmd FileType text setlocal textwidth=0
+set transparency=10

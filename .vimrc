@@ -5,6 +5,7 @@ set number
 set tabstop=4
 set shiftwidth=4
 set autoindent
+set clipboard+=unnamed
 set antialias
 set backupdir=/tmp
 set directory=/tmp
