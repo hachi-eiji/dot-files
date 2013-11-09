@@ -11,7 +11,6 @@ set backupdir=/tmp
 set directory=/tmp
 syntax on
 set t_Co=256
-colorscheme jellybeans
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
