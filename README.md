@@ -55,3 +55,8 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ```
 brew install mosh
 ```
+
+## install tig
+```
+brew install tig
+```
