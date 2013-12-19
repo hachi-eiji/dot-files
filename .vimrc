@@ -15,7 +15,6 @@ set t_Co=256
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'w0ng/vim-hybrid'
 Bundle 'gmarik/vundle'
 Bundle 'kana/vim-fakeclip'
 Bundle 'pangloss/vim-javascript'
