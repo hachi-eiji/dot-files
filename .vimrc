@@ -24,5 +24,7 @@ Bundle 'taglist.vim'
 " markdown
 Bundle 'tpope/vim-markdown'
 
+colorscheme jellybeans
+
 filetype plugin indent on
 set imdisable
