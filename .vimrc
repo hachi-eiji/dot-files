@@ -23,6 +23,14 @@ Bundle 'mru.vim'
 Bundle 'taglist.vim'
 " markdown
 Bundle 'tpope/vim-markdown'
+Bundle 't9md/vim-choosewin'
+
+" if you want to use overlay feature
+let g:choosewin_overlay_enable          = 1
+" overlay font broke on mutibyte buffer?
+let g:choosewin_overlay_clear_multibyte = 1
+nmap ; <Plug>(choosewin)
+
 
 colorscheme jellybeans
 
