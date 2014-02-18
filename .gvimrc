@@ -8,3 +8,4 @@ set transparency=10
 " nobeep
 set visualbell t_vb= 
 set smartindent
+set guifont=Ricty\ Regular:h14

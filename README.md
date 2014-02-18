@@ -60,3 +60,13 @@ brew install mosh
 ```
 brew install tig
 ```
+
+## install Ricky
+```
+cd /tmp
+brew tap sanemat/font
+brew install ricty
+## このへんはコマンドに出てくる
+cp -f /usr/local/Cellar/ricty/3.2.2/share/fonts/Ricty*.ttf ~/Library/Fonts/
+fc-cache -vf
+```
