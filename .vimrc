@@ -24,6 +24,7 @@ Bundle 'taglist.vim'
 " markdown
 Bundle 'tpope/vim-markdown'
 Bundle 't9md/vim-choosewin'
+Bundle 'itchyny/lightline.vim'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -31,6 +32,9 @@ let g:choosewin_overlay_enable          = 1
 let g:choosewin_overlay_clear_multibyte = 1
 nmap ; <Plug>(choosewin)
 
+if filereadable(expand('~/.vimrc.lightline'))
+	  source ~/.vimrc.lightline
+endif
 
 colorscheme jellybeans
 
