@@ -25,6 +25,7 @@ Bundle 'taglist.vim'
 Bundle 'tpope/vim-markdown'
 Bundle 't9md/vim-choosewin'
 Bundle 'itchyny/lightline.vim'
+Bundle 'tpope/vim-fugitive'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
