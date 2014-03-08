@@ -49,6 +49,7 @@ install vim vundle
 
 ```
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+ln -s <repository>/.vimrc.lightline ~/.vimrc.lightline
 ```
 
 ## install mosh
@@ -69,4 +70,10 @@ brew install ricty
 ## このへんはコマンドに出てくる
 cp -f /usr/local/Cellar/ricty/3.2.2/share/fonts/Ricty*.ttf ~/Library/Fonts/
 fc-cache -vf
+# patch for vim lightline
+git clone git@github.com:Lokaltog/vim-powerline.git
+cd vim-powerline/fontpatcher
+fontforge -lang=py -script fontpatcher ~/Library/Fonts/Ricty-Bold.ttf
+fontforge -lang=py -script fontpatcher ~/Library/Fonts/Ricty-Regular.ttf
+mv Ricty* ~/Library/Fonts
 ```
