@@ -1,2 +1,3 @@
 bind generic g move-first-line
 bind generic G move-last-line
+set show-line-numbers = yes
