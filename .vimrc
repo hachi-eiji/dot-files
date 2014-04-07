@@ -2,6 +2,7 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set number
+set expandtab
 set tabstop=2
 set shiftwidth=2
 set autoindent
