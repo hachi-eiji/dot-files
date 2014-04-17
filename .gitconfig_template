@@ -1,0 +1,27 @@
+[user]
+	name = <User>
+	email = <mail>
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[push]
+	default = tracking
+[merge]
+  tool = vimdiff
+[alias]
+  ad = add
+  fto = fetch origin
+	cm = commit
+  s  = status
+	st = status -sb
+  # checkout
+	co = checkout
+  cob = checkout -b
+  cod = checkout develop
+  com = checkout master
+	ac = !git add -A && git commit
