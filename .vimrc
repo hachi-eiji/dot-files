@@ -2,16 +2,31 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set number
+syntax on
+set t_Co=256
+set antialias
+
+" tab setting
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+" indent
+set smartindent
 set autoindent
+set showmatch " 対応括弧を強調
+set smarttab  " 新しい行を作った時に自動インデント
+
+" backup
 set clipboard+=unnamed
-set antialias
 set backupdir=/tmp
 set directory=/tmp
-syntax on
-set t_Co=256
+
+" search
+set ignorecase " 大文字小文字は区別しない
+set smartcase " 検索文字列に大文字が含まれてる時は区別
+set incsearch
+set wrapscan
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
