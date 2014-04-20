@@ -83,6 +83,7 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 ## remove link
 rm -/.zshrc
 ln -s /Users/hachi/development/dot-files/oh-my-zsh.template ~/.zshrc
+ln -s /Users/hachi/development/dot-files/hachi-simple.zsh-theme ~/.oh-my-zsh/themes/hachi-simple.zsh-theme
 ## restart terminal
 ln -s .zshrc $ZSH_CUSTOM/my-zsh-config.zsh
 ```
