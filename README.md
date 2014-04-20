@@ -77,3 +77,12 @@ fontforge -lang=py -script fontpatcher ~/Library/Fonts/Ricty-Bold.ttf
 fontforge -lang=py -script fontpatcher ~/Library/Fonts/Ricty-Regular.ttf
 mv Ricty* ~/Library/Fonts
 ```
+## install oh-my-zsh
+```
+git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+## remove link
+rm -/.zshrc
+ln -s /Users/hachi/development/dot-files/oh-my-zsh.template ~/.zshrc
+## restart terminal
+ln -s .zshrc $ZSH_CUSTOM/my-zsh-config.zsh
+```
