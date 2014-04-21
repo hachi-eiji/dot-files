@@ -3,6 +3,11 @@ dot-files
 
 my mac dot files
 
+at first 
+```
+export DOT_FILE_PATH=""
+```
+
 install zsh
 --
 
@@ -81,9 +86,8 @@ mv Ricty* ~/Library/Fonts
 ```
 git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 ## remove link
-rm -/.zshrc
-ln -s /Users/hachi/development/dot-files/oh-my-zsh.template ~/.zshrc
-ln -s /Users/hachi/development/dot-files/hachi-simple.zsh-theme ~/.oh-my-zsh/themes/hachi-simple.zsh-theme
-## restart terminal
-ln -s .zshrc $ZSH_CUSTOM/my-zsh-config.zsh
+rm ~/.zshrc
+ln -s $DOT_FILE_PATH/oh-my-zsh.template ~/.zshrc
+ln -s $DOT_FILE_PATH/hachi-simple.zsh-theme ~/.oh-my-zsh/themes/hachi-simple.zsh-theme
+ln -s $DOT_FILE_PATH/.zshrc $ZSH_CUSTOM/my-zsh-config.zsh
 ```
