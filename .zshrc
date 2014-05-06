@@ -22,9 +22,6 @@ fi
 }
 _cache_hosts=($( print_known_hosts ))
 
-# moshでssh補完
-compdef mosh=ssh
-
 # vim config 
 # add .bash_profile
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
