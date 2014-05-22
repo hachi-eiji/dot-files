@@ -1,6 +1,3 @@
-[user]
-	name = <User>
-	email = <mail>
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
