@@ -58,6 +58,10 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
+path=(
+    /opt/*/(s|)bin(N-/)
+    $path
+)
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -75,3 +79,17 @@ export _JAVA_OPTIONS="-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+#
+## cdr system stuff.
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+add-zsh-hook chpwd chpwd_recent_dirs
+zstyle ':chpwd:*' recent-dirs-max 5000
+zstyle ':chpwd:*' recent-dirs-default yes
+zstyle ':completion:*' recent-dirs-insert both
+source /opt/zaw/zaw.zsh
+zstyle ':filter-select' case-insensitive yes 
+bindkey '^@' zaw-cdr
+bindkey '^b' zaw-git-recent-branches
+bindkey '^f' zaw-git-files
+bindkey '^r' zaw-history
+
