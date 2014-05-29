@@ -89,7 +89,6 @@ zstyle ':completion:*' recent-dirs-insert both
 source /opt/zaw/zaw.zsh
 zstyle ':filter-select' case-insensitive yes 
 bindkey '^@' zaw-cdr
-bindkey '^b' zaw-git-recent-branches
-bindkey '^f' zaw-git-files
-bindkey '^r' zaw-history
-
+bindkey '^x^b' zaw-git-recent-branches
+bindkey '^x^f' zaw-git-files
+bindkey '^x^r' zaw-history
