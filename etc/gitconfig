@@ -1,24 +1,24 @@
 [core]
-	excludesfile = ~/.gitignore_global
-	autocrlf = input
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
 [push]
-	default = tracking
+  default = tracking
 [merge]
   tool = vimdiff
 [alias]
   ad = add
   fto = fetch origin
-	cm = commit
+  cm = commit
   s  = status
-	st = status -sb
-  # checkout
-	co = checkout
+  st = status -sb
+# checkout
+  co = checkout
   cob = checkout -b
   cod = checkout develop
   com = checkout master
-	ac = !git add -A && git commit
+  ac = !git add -A && git commit
