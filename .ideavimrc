@@ -1,1 +1,2 @@
 imap <c-]> <esc>
+imap <c-h> <backspace>
