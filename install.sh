@@ -14,7 +14,6 @@ sudo mv /usr/bin/ctags /usr/bin/ctags.org
 
 echo 'install tmux'
 brew install tmux
-cp -p $DOT_FILE_DIR/bin/tmux-pbcopy /usr/local/bin/
 
 echo 'install mosh'
 brew install mosh
@@ -38,14 +37,9 @@ mv Ricty* ~/Library/Fonts
 echo 'vim vundle'
 mkdir -p ~/.vim/bundle
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-mkdir -p ~/.vim/after/indent
-ln -s $DOT_FILE_DIR/.vim/after/indent/javascript.vim ~/.vim/after/indent/javascript.vim
 
 echo 'install oh-my-zsh'
 git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
-
-echo 'make /etc/gitconfig'
-ln -s $DOT_FILE_DIR/etc/gitconfig /etc/gitconfig
 
 find `pwd` -maxdepth 1 -mindepth 1 -type f -name ".*" | awk -F"/" '{print "ln -is",$0,"~/"$NF}' > $TMP_FILE
 sh $TMP_FILE
