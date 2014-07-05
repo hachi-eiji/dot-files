@@ -86,6 +86,8 @@ mv Ricty* ~/Library/Fonts
 ```
 brew tap peco/peco
 brew install peco
+mkdir -p $HOME/.config/peco
+ln -s $HOME/.config/peco .config/peco/config.json
 ```
 
 ## install oh-my-zsh
