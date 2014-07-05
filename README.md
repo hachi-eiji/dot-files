@@ -82,6 +82,12 @@ fontforge -lang=py -script fontpatcher ~/Library/Fonts/Ricty-Bold.ttf
 fontforge -lang=py -script fontpatcher ~/Library/Fonts/Ricty-Regular.ttf
 mv Ricty* ~/Library/Fonts
 ```
+## install peco
+```
+brew tap peco/peco
+brew install peco
+```
+
 ## install oh-my-zsh
 ```
 git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
