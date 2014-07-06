@@ -16,6 +16,13 @@ setopt correct
 setopt list_packed
 # 補完候補表示時などにピッピとビープ音をならないように設定
 setopt nolistbeep
+# ヒストリに追加されるコマンド行が古いものと同じなら古いものを削除
+setopt hist_ignore_all_dups
+# share
+setopt share_history
+setopt hist_no_store
+# 重複を記録しない
+setopt hist_ignore_dups
 
 function print_known_hosts (){ 
 if [ -f $HOME/.ssh/known_hosts ]; then
@@ -23,6 +30,46 @@ cat $HOME/.ssh/known_hosts | tr ',' ' ' | cut -d' ' -f1
 fi
 }
 _cache_hosts=($( print_known_hosts ))
+
+# source peco
+#
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(\history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^x^r' peco-select-history
+
+function peco-cdr () {
+    local selected_dir=$(cdr -l | awk '{ print $2 }' | peco)
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-cdr
+bindkey '^x^@' peco-cdr
+
+function peco-git-checkout-b(){
+  local selected_branch=$(git branch -r | awk -F"/" '{ branch = $0; sub($1"/", "", branch); print branch }' | peco)
+  if [ -n "$selected_branch" ]; then
+      BUFFER="git checkout -b ${selected_branch}"
+      zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-git-checkout-b
+bindkey '^g^b' peco-git-checkout-b
 
 # vim config 
 # add .bash_profile
