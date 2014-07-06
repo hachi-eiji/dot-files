@@ -50,13 +50,14 @@ ZSH_THEME="hachi"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx mvn mosh tmux )
+plugins=(git osx mvn mosh tmux golang)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export GOROOT=$HOME/go
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOROOT/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(
     /opt/*/(s|)bin(N-/)
