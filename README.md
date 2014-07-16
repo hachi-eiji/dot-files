@@ -37,6 +37,8 @@ install tmux
 
 ```
 brew install tmux
+gem install tmuxinator
+
 ```
 
 install ctag

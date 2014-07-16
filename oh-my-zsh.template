@@ -54,19 +54,6 @@ plugins=(git osx mvn mosh tmux golang)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-export GOROOT=$HOME/go
-
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOROOT/bin
-# export MANPATH="/usr/local/man:$MANPATH"
-path=(
-    /opt/*/(s|)bin(N-/)
-    $path
-)
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-export _JAVA_OPTIONS="-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then

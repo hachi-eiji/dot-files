@@ -75,6 +75,21 @@ bindkey '^g^b' peco-git-checkout-b
 # vim config 
 # add .bash_profile
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+export SHELL='zsh'
+# User configuration
+export GOROOT=$HOME/go
+export SHELL='zsh'
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOROOT/bin
+# export MANPATH="/usr/local/man:$MANPATH"
+path=(
+    /opt/*/(s|)bin(N-/)
+    $path
+)
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+export _JAVA_OPTIONS="-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8"
+
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
@@ -82,3 +97,4 @@ alias t='tmux'
 alias ta='tmux a'
 alias tl='tmux list-sessions'
 alias ls='ls -G'
+source ~/.tmuxinator/tmuxinator.zsh
