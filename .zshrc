@@ -96,4 +96,4 @@ alias t='tmux'
 alias ta='tmux a'
 alias tl='tmux list-sessions'
 alias ls='ls -G'
-source ~/.tmuxinator/tmuxinator.zsh
+test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
