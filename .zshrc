@@ -61,10 +61,11 @@ zle -N peco-cdr
 bindkey '^x^@' peco-cdr
 
 function peco-git-checkout-b(){
-  local selected_branch="$(git branch -r | peco)"
-  local local_branch=$(echo "$selected_branch" | awk -F"/" '{ branch = $0; sub($1"/", "", branch); print branch }')
-  if [ -n "$selected_branch" -a -n "$local_branch" ]; then
-      BUFFER="git checkout -b ${local_branch} ${selected_branch}"
+  local selected_branch=$(git for-each-ref --format='%(refname)' --sort=-committerdate refs/remotes | \
+      perl -pne 's{^refs/(heads|remotes)/}{}' | \
+      peco)
+  if [ -n "$selected_branch" ]; then
+      BUFFER="git checkout -t ${selected_branch}"
       zle accept-line
   fi
   zle clear-screen
