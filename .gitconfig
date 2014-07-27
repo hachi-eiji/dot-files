@@ -22,3 +22,6 @@
   cod = checkout develop
   com = checkout master
   ac = !git add -A && git commit
+[user]
+	name = hachi-eiji
+	email = hachiyae@gmail.com
