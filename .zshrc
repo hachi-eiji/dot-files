@@ -78,8 +78,8 @@ bindkey '^g^b' peco-git-checkout-b
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 export SHELL='/bin/zsh'
 # User configuration
-export GOROOT=$HOME/go
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOROOT/bin
+export GOPATH=$HOME/.go/current
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(
     /opt/*/(s|)bin(N-/)

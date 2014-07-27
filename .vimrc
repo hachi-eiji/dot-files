@@ -44,6 +44,7 @@ Bundle 'itchyny/lightline.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neomru.vim'
+Bundle 'fatih/vim-go'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
