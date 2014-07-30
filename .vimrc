@@ -21,6 +21,7 @@ set smarttab  " 新しい行を作った時に自動インデント
 set clipboard+=unnamed
 set backupdir=/tmp
 set directory=/tmp
+set undodir=/tmp
 
 " search
 set ignorecase " 大文字小文字は区別しない
