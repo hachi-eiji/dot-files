@@ -3,7 +3,6 @@
     "Basic": ["on_default", "default"],
     "SavedSelection": ["bold", "on_black", "yellow"],
     "Selected": ["underline", "on_black", "yellow"],
-    "Query": ["yellow", "bold"],
-    "Matched": ["red", "on_blue"]
+    "Query": ["yellow", "bold"]
   }
 }
