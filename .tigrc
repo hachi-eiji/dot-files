@@ -7,5 +7,5 @@ set refs-view = date:default author:full id ref:true commit-title:true
 set status-view = file-name status:long
 set tree-view = date:default author:full id file-size:unit mode file-name
 
-bind main  r !git rebase -i %(commit)
-bind diff  r !git rebase -i %(commit)
+bind main  B !git rebase -i %(commit)
+bind diff  B !git rebase -i %(commit)
