@@ -45,6 +45,8 @@ Bundle 'itchyny/lightline.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neomru.vim'
+Bundle 'Shougo/neocomplete.vim'
+Bundle 'tpope/vim-endwise'
 Bundle 'fatih/vim-go'
 
 " if you want to use overlay feature
@@ -52,6 +54,7 @@ let g:choosewin_overlay_enable          = 1
 " overlay font broke on mutibyte buffer?
 let g:choosewin_overlay_clear_multibyte = 1
 nmap ; <Plug>(choosewin)
+let g:neocomplete#enable_at_startup = 1
 
 if filereadable(expand('~/.vimrc.lightline'))
 	  source ~/.vimrc.lightline
