@@ -48,6 +48,7 @@ Bundle 'Shougo/neomru.vim'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'fatih/vim-go'
+Plugin 'rizzatti/dash.vim'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
