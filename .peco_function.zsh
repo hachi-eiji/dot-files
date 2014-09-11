@@ -77,3 +77,26 @@ function peco-git-recent-all-branches () {
 }
 zle -N peco-git-recent-all-branches
 bindkey '^xb' peco-git-recent-all-branches
+
+
+function peco-ssh (){
+  local selected_ssh=$(print_known_hosts | peco)
+  if [ -n "$selected_ssh" ]; then
+    BUFFER="ssh $selected_ssh"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-ssh
+bindkey '^x^s' peco-ssh
+
+function peco-mosh (){
+  local selected_ssh=$(print_known_hosts | peco)
+  if [ -n "$selected_ssh" ]; then
+    BUFFER="mosh $selected_ssh"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-mosh
+bindkey '^x^m' peco-mosh
