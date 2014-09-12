@@ -9,3 +9,5 @@ set tree-view = date:default author:full id file-size:units mode file-name
 
 bind main  B !git rebase -i %(commit)
 bind diff  B !git rebase -i %(commit)
+
+color cursor white black bold 
