@@ -66,7 +66,7 @@ if filereadable(expand('~/.vimrc.unite'))
 endif
 
 colorscheme hybrid
-hi LineNr ctermfg=14 ctermbg=232 guifg=#8f908A
+hi LineNr ctermfg=black ctermbg=234 guifg=#8f908A
 
 filetype plugin indent on
 set imdisable

@@ -3,7 +3,7 @@ set columns=120
 set lines=40
 set backupdir=/tmp
 colorscheme hybrid
-hi LineNr ctermfg=14 ctermbg=232 guifg=#8f908A
+hi LineNr ctermfg=black ctermbg=234 guifg=#8f908A
 autocmd FileType text setlocal textwidth=0
 set transparency=10
 " nobeep
