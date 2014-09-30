@@ -50,6 +50,9 @@ Bundle 'Shougo/neomru.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'fatih/vim-go'
 Plugin 'rizzatti/dash.vim'
+Plugin 'tomasr/molokai'
+Plugin 'vim-scripts/twilight'
+Plugin 'altercation/vim-colors-solarized'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
