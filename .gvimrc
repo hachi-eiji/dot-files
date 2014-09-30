@@ -2,7 +2,8 @@ set showtabline=2
 set columns=120
 set lines=40
 set backupdir=/tmp
-colorscheme jellybeans
+colorscheme hybrid
+hi LineNr ctermfg=14 ctermbg=232 guifg=#8f908A
 autocmd FileType text setlocal textwidth=0
 set transparency=10
 " nobeep

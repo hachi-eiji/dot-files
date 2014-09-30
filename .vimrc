@@ -65,7 +65,8 @@ if filereadable(expand('~/.vimrc.unite'))
 	  source ~/.vimrc.unite
 endif
 
-colorscheme jellybeans
+colorscheme hybrid
+hi LineNr ctermfg=14 ctermbg=232 guifg=#8f908A
 
 filetype plugin indent on
 set imdisable
