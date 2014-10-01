@@ -31,7 +31,7 @@ set wrapscan
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'nanotech/jellybeans.vim'
+Bundle 'hachi-eiji/jellybeans.vim'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'gmarik/vundle'
 Bundle 'kana/vim-fakeclip'
@@ -59,10 +59,11 @@ nmap ; <Plug>(choosewin)
 let g:neocomplete#enable_at_startup = 1
 
 if filereadable(expand('~/.vimrc.lightline'))
-	  source ~/.vimrc.lightline
+  set laststatus=2
+  source ~/.vimrc.lightline
 endif
 if filereadable(expand('~/.vimrc.unite'))
-	  source ~/.vimrc.unite
+  source ~/.vimrc.unite
 endif
 
 colorscheme jellybeans
