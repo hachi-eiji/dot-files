@@ -1,3 +1,5 @@
+fpath=($fpath $HOME/.zsh-functions/)
+
 autoload -U compinit && compinit
 
 # ヒストリの設定
@@ -63,4 +65,6 @@ alias ta='tmux a'
 alias tl='tmux list-sessions'
 alias ls='ls -G'
 test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
+
+# hub setting
 function git(){hub "$@"}

@@ -109,4 +109,5 @@ https://github.com/github/hub
 
 ```
 brew install --HEAD hub
+ln -s $DOT_FILE_PATH/dot-files/.zsh-functions $HOME/.zsh-functions
 ```
