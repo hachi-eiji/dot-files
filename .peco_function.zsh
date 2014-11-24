@@ -33,7 +33,7 @@ function peco-git-checkout-b(){
       perl -pne 's{^refs/(heads|remotes)/}{}' | \
       peco)
   if [ -n "$selected_branch" ]; then
-      BUFFER="git checkout -t ${selected_branch}"
+      BUFFER="$git checkout -t ${selected_branch}"
       zle accept-line
   fi
   zle clear-screen
@@ -60,7 +60,7 @@ function peco-git-recent-branches () {
         perl -pne 's{^refs/heads/}{}' | \
         peco)
     if [ -n "$selected_branch" ]; then
-        BUFFER="git checkout ${selected_branch}"
+        BUFFER="$git checkout ${selected_branch}"
         zle accept-line
     fi
     zle clear-screen
@@ -74,7 +74,7 @@ function peco-git-recent-all-branches () {
         perl -pne 's{^refs/(heads|remotes)/}{}' | \
         peco)
     if [ -n "$selected_branch" ]; then
-        BUFFER="git checkout -t ${selected_branch}"
+        BUFFER="$git checkout -t ${selected_branch}"
         zle accept-line
     fi
     zle clear-screen
