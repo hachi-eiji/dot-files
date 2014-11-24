@@ -63,3 +63,4 @@ alias ta='tmux a'
 alias tl='tmux list-sessions'
 alias ls='ls -G'
 test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
+function git(){hub "$@"}

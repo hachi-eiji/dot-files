@@ -102,3 +102,11 @@ ln -s $DOT_FILE_PATH/hachi-simple.zsh-theme ~/.oh-my-zsh/themes/hachi-simple.zsh
 ln -s $DOT_FILE_PATH/.zshrc $ZSH_CUSTOM/my-zsh-config.zsh
 ln -s $DOT_FILE_PATH/.peco_function.zsh $HOME/.peco_function.zsh
 ```
+
+## install hub
+
+https://github.com/github/hub
+
+```
+brew install --HEAD hub
+```

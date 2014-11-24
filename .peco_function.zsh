@@ -28,7 +28,8 @@ zle -N peco-cdr
 bindkey '^x^@' peco-cdr
 
 function peco-git-checkout-b(){
-  local selected_branch=$(git for-each-ref --format='%(refname)' --sort=-committerdate refs/remotes | \
+  local git==git
+  local selected_branch=$($git for-each-ref --format='%(refname)' --sort=-committerdate refs/remotes | \
       perl -pne 's{^refs/(heads|remotes)/}{}' | \
       peco)
   if [ -n "$selected_branch" ]; then
@@ -41,7 +42,8 @@ zle -N peco-git-checkout-b
 bindkey '^g^b' peco-git-checkout-b
 
 function peco-git-vim (){
-  local selected_file=$(git ls-files | peco)
+  local git==git
+  local selected_file=$($git ls-files | peco)
   if [ -n "$selected_file" ]; then
     BUFFER="vim $selected_file"
     zle accept-line
@@ -53,7 +55,8 @@ bindkey '^x^f' peco-git-vim
 
 
 function peco-git-recent-branches () {
-    local selected_branch=$(git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads | \
+    local git==git
+    local selected_branch=$($git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads | \
         perl -pne 's{^refs/heads/}{}' | \
         peco)
     if [ -n "$selected_branch" ]; then
@@ -66,7 +69,8 @@ zle -N peco-git-recent-branches
 bindkey '^x^b' peco-git-recent-branches
 
 function peco-git-recent-all-branches () {
-    local selected_branch=$(git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads refs/remotes | \
+    local git==git
+    local selected_branch=$($git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads refs/remotes | \
         perl -pne 's{^refs/(heads|remotes)/}{}' | \
         peco)
     if [ -n "$selected_branch" ]; then
