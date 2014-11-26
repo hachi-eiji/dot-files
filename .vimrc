@@ -35,7 +35,8 @@ Bundle 'hachi-eiji/jellybeans.vim'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'gmarik/vundle'
 Bundle 'kana/vim-fakeclip'
-Bundle 'pangloss/vim-javascript'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'guileen/vim-node-dict'
 Bundle 'JavaScript-syntax'
 Bundle 'mru.vim'
 Bundle 'taglist.vim'
@@ -70,6 +71,7 @@ if filereadable(expand('~/.vimrc.unite'))
 endif
 
 colorscheme jellybeans
+au FileType javascript set dictionary+=$HOME/.vim/dict/node.dict
 
 filetype plugin indent on
 set imdisable
