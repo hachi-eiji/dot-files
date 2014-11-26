@@ -36,6 +36,10 @@ _cache_hosts=($( print_known_hosts ))
 ## source peco function
 source $HOME/.peco_function.zsh
 
+# nodejs setting
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # vim config 
 # add .bash_profile
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
@@ -68,5 +72,3 @@ test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
 
 # hub setting
 function git(){hub "$@"}
-source $(brew --prefix nvm)/nvm.sh
-export NVM_DIR=~/.nvm
