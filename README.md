@@ -59,7 +59,9 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ln -s <repository>/.vimrc.lightline ~/.vimrc.lightline
 ```
 
-## install mosh
+install mosh
+--
+
 ```
 brew install mosh
 ```
@@ -69,7 +71,9 @@ brew install mosh
 brew install tig
 ```
 
-## install Ricky
+install Ricky
+--
+
 ```
 cd /tmp
 brew tap sanemat/font
@@ -84,7 +88,10 @@ fontforge -lang=py -script fontpatcher ~/Library/Fonts/Ricty-Bold.ttf
 fontforge -lang=py -script fontpatcher ~/Library/Fonts/Ricty-Regular.ttf
 mv Ricty* ~/Library/Fonts
 ```
-## install peco
+
+install peco
+--
+
 ```
 brew tap peco/peco
 brew install peco
@@ -92,7 +99,9 @@ mkdir -p $HOME/.config/peco
 ln -s $HOME/.config/peco .config/peco/config.json
 ```
 
-## install oh-my-zsh
+install oh-my-zsh
+--
+
 ```
 git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 ## remove link
@@ -103,11 +112,19 @@ ln -s $DOT_FILE_PATH/.zshrc $ZSH_CUSTOM/my-zsh-config.zsh
 ln -s $DOT_FILE_PATH/.peco_function.zsh $HOME/.peco_function.zsh
 ```
 
-## install hub
+install hub
+--
 
 https://github.com/github/hub
 
 ```
 brew install --HEAD hub
 ln -s $DOT_FILE_PATH/dot-files/.zsh-functions $HOME/.zsh-functions
+```
+
+install nvm
+--
+
+```
+brew install nvm
 ```
