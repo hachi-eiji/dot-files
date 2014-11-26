@@ -68,3 +68,5 @@ test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
 
 # hub setting
 function git(){hub "$@"}
+source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.nvm
