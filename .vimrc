@@ -68,9 +68,9 @@ if filereadable(expand('~/.vimrc.unite'))
   source ~/.vimrc.unite
 endif
 
-if filereadable(expand('~/.vimrc.js'))
-  source ~/.vimrc.js
-endif
+"if filereadable(expand('~/.vimrc.js'))
+"  source ~/.vimrc.js
+"endif
 
 colorscheme jellybeans
 
