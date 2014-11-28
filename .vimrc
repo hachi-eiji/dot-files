@@ -52,6 +52,7 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/twilight'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'kannokanno/previm'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -71,6 +72,10 @@ endif
 "if filereadable(expand('~/.vimrc.js'))
 "  source ~/.vimrc.js
 "endif
+
+let g:previm_open_cmd = 'open -a "Google Chrome"'
+nnoremap <silent> gp :PrevimOpen<CR>
+
 
 colorscheme jellybeans
 
