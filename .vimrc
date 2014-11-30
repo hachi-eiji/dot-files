@@ -69,8 +69,8 @@ if filereadable(expand('~/.vimrc.unite'))
   source ~/.vimrc.unite
 endif
 
-"if filereadable(expand('~/.vimrc.js'))
-"  source ~/.vimrc.js
+"if filereadable(expand('~/.vimrc_js'))
+"  source ~/.vimrc_js
 "endif
 
 let g:previm_open_cmd = 'open -a "Google Chrome"'
