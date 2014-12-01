@@ -1,2 +1,4 @@
 imap <c-]> <esc>
 imap <c-h> <backspace>
+set clipboard+=unnamed
+nnoremap / :action Find <CR>
