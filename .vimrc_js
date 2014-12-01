@@ -2,7 +2,7 @@
 Bundle 'scrooloose/syntastic'
 Bundle 'Shougo/neocomplete'
 Bundle 'mattn/jscomplete-vim'
-Bundle 'ahayman/vim-nodejs-complete'
+Bundle 'myhere/vim-nodejs-complete'
 Bundle 'jelera/vim-javascript-syntax'
 " 整形
 Bundle 'maksimr/vim-jsbeautify'
