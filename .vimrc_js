@@ -3,10 +3,12 @@ Bundle 'scrooloose/syntastic'
 Bundle 'Shougo/neocomplete'
 Bundle 'mattn/jscomplete-vim'
 Bundle 'myhere/vim-nodejs-complete'
+
 Bundle 'jelera/vim-javascript-syntax'
 " 整形
 Bundle 'maksimr/vim-jsbeautify'
 " 辞書
+Bundle 'guileen/vim-node-dict'
 Bundle 'moll/vim-node'
 
 let g:syntastic_javascript_checkers = ['jshint']
@@ -18,7 +20,7 @@ let g:jscomplete_use = ['dom', 'moz']
 augroup js
   autocmd!
 augroup END
-
+autocmd js FileType javascript set dictionary+=$HOME/.vim/dict/node.dict
 autocmd js FileType javascript setlocal omnifunc=nodejscomplete#CompleteJS
 if !exists('g:neocomplcache_omni_functions')
     let g:neocomplcache_omni_functions = {}
