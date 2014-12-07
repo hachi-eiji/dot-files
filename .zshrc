@@ -72,3 +72,8 @@ test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
 
 # hub setting
 function git(){hub "$@"}
+
+# ctr-sがきかない対策
+stty -ixoff
+stty stop undef
+stty start undef

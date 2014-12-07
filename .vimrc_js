@@ -20,7 +20,7 @@ let g:jscomplete_use = ['dom', 'moz']
 augroup js
   autocmd!
 augroup END
-autocmd js FileType javascript set dictionary+=$HOME/.vim/dict/node.dict
+autocmd js FileType javascript set dictionary+=$HOME/.vim/bundle/vim-node-dict/dict/node.dict
 autocmd js FileType javascript setlocal omnifunc=nodejscomplete#CompleteJS
 if !exists('g:neocomplcache_omni_functions')
     let g:neocomplcache_omni_functions = {}
