@@ -62,7 +62,7 @@ export _JAVA_OPTIONS="-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8"
 
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
+#alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
 alias vimdiff='/Applications/MacVim.app/Contents/MacOS/vimdiff'
 alias t='tmux'
 alias ta='tmux a'
