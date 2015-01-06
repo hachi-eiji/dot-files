@@ -1,6 +1,6 @@
 " 補完
 Bundle 'scrooloose/syntastic'
-Bundle 'Shougo/neocomplete'
+"Bundle 'Shougo/neocomplete'
 Bundle 'mattn/jscomplete-vim'
 Bundle 'myhere/vim-nodejs-complete'
 
@@ -17,7 +17,7 @@ let g:syntastic_auto_loc_list= 1
 
 let g:jscomplete_use = ['dom', 'moz']
 " 日本語入力の時にneocompleteを抑制
-let g:neocomplete#lock_iminsert = 1
+let g:neocomplete#lock_iminsert=1
 
 augroup js
   autocmd!

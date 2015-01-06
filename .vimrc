@@ -47,11 +47,12 @@ Bundle 'Shougo/neomru.vim'
 "Bundle 'Shougo/neocomplete.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'fatih/vim-go'
-Plugin 'rizzatti/dash.vim'
-Plugin 'tomasr/molokai'
-Plugin 'vim-scripts/twilight'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'kannokanno/previm'
+Bundle 'rizzatti/dash.vim'
+Bundle 'tomasr/molokai'
+Bundle 'vim-scripts/twilight'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'kannokanno/previm'
+Bundle 'opsplorer'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
