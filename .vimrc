@@ -28,6 +28,21 @@ set smartcase " 検索文字列に大文字が含まれてる時は区別
 set incsearch
 set wrapscan
 
+"tag
+set tags=tags
+
+" カーソル行をハイライト
+set cursorline
+" カレントウィンドウにのみ罫線を引く
+augroup cch
+  autocmd! cch
+  autocmd WinLeave * set nocursorline
+  autocmd WinEnter,BufRead * set cursorline
+augroup END
+
+hi clear CursorLine
+highlight CursorLine ctermbg=black guibg=black
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'hachi-eiji/jellybeans.vim'
