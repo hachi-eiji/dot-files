@@ -59,7 +59,7 @@ Bundle 'itchyny/lightline.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neomru.vim'
-Bundle 'Shougo/neocomplete.vim'
+"Bundle 'Shougo/neocomplete.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'fatih/vim-go'
 Bundle 'rizzatti/dash.vim'
@@ -92,8 +92,9 @@ endif
 let g:previm_open_cmd = 'open -a "Google Chrome"'
 nnoremap <silent> gp :PrevimOpen<CR>
 
-
 colorscheme jellybeans
+
+au BufNewFile,BufRead *.md :set filetype=markdown
 
 filetype plugin indent on
 set imdisable
