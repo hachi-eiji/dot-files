@@ -73,7 +73,7 @@ alias ls='ls -G'
 test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
 
 # hub setting
-function git(){hub "$@"}
+alias git='hub'
 
 # ctr-sがきかない対策
 stty -ixoff
