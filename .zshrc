@@ -70,6 +70,7 @@ alias t='tmux'
 alias ta='tmux a'
 alias tl='tmux list-sessions'
 alias ls='ls -G'
+alias grum='git fetch upstream && git rebase upstream/master'
 test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
 
 # hub setting
