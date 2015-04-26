@@ -46,7 +46,8 @@ export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 export SHELL='/bin/zsh'
 # User configuration
 export GOPATH=$HOME/.go/current
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOROOT/bin
 #rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
