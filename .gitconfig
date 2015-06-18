@@ -25,7 +25,3 @@
 [user]
 	name = hachi-eiji
 	email = hachiyae@gmail.com
-[pager]
-  log = diff-highlight | less
-  show = diff-highlight | less
-  diff = diff-highlight | less
