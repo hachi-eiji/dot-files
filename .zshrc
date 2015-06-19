@@ -67,7 +67,7 @@ alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"
 alias vimdiff='/Applications/MacVim.app/Contents/MacOS/vimdiff'
 alias tmux='tmux -u'
 alias t='tmux'
-alias ta='tmux a'
+alias tad='tmux a -d -t'
 alias tl='tmux list-sessions'
 alias ls='ls -G'
 alias grum='git fetch upstream && git rebase upstream/master'
