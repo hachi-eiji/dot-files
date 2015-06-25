@@ -68,7 +68,7 @@ Bundle 'vim-scripts/twilight'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kannokanno/previm'
 Bundle 'opsplorer'
-Bundle 'editorconfig/editorconfig'
+Bundle 'editorconfig/editorconfig-vim'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -91,6 +91,9 @@ endif
 
 let g:previm_open_cmd = 'open -a "Google Chrome"'
 nnoremap <silent> gp :PrevimOpen<CR>
+
+" editorconfig
+let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
 
 colorscheme jellybeans
 

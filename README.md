@@ -128,3 +128,9 @@ install nvm
 ```
 brew install nvm
 ```
+
+install editorconfig
+
+```
+brew install editorconfig
+```
