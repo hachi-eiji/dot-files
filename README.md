@@ -128,3 +128,10 @@ install nvm
 ```
 brew install nvm
 ```
+
+install direnv
+--
+
+```
+brew install direnv
+```
