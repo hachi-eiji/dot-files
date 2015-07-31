@@ -88,3 +88,4 @@ zstyle ':filter-select' case-insensitive yes
 #bindkey '^x^f' zaw-git-files
 #bindkey '^x^r' zaw-history
 #bindkey '^x^s' zaw-ssh-hosts
+typeset -U name_of_the_variable

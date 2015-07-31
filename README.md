@@ -130,7 +130,14 @@ brew install nvm
 ```
 
 install editorconfig
-
+--
 ```
 brew install editorconfig
+```
+
+install direnv
+--
+
+```
+brew install direnv
 ```

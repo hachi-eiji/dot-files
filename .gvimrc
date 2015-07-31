@@ -9,3 +9,5 @@ set transparency=10
 set visualbell t_vb= 
 set smartindent
 set guifont=Ricty\ Regular:h14
+
+source ~/.zshrc
