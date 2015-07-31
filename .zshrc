@@ -79,7 +79,7 @@ export COMPANY_DOT_FILE="/Users/hachiya_eiji/Documents/ca-dot-file"
 test -e $COMPANY_DOT_FILE/env.sh && source $COMPANY_DOT_FILE/env.sh
 
 # hub setting
-#alias git='hub'
+alias git='hub'
 
 # ctr-sがきかない対策
 stty -ixoff
