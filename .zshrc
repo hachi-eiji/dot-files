@@ -74,7 +74,7 @@ alias grum='git fetch upstream && git rebase upstream/master'
 test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
 
 # hub setting
-alias git='hub'
+#alias git='hub'
 
 # ctr-sがきかない対策
 stty -ixoff
