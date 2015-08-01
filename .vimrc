@@ -7,7 +7,6 @@ set antialias
 
 " tab setting
 set expandtab
-set tabstop=2
 set shiftwidth=2
 
 " indent
