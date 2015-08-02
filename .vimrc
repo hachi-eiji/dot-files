@@ -88,6 +88,9 @@ if filereadable(expand('~/.vimrc_js'))
   source ~/.vimrc_js
 endif
 
+" split window right side
+let g:netrw_altv = 1
+
 let g:previm_open_cmd = 'open -a "Google Chrome"'
 nnoremap <silent> gp :PrevimOpen<CR>
 
