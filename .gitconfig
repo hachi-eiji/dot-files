@@ -7,8 +7,10 @@
   branch = auto
   interactive = auto
 [push]
-  default = tracking
+  default = simple
 [merge]
+  tool = vimdiff
+[diff]
   tool = vimdiff
 [alias]
   ad = add
