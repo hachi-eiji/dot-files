@@ -26,5 +26,5 @@
   ac = !git add -A && git commit
   fetch-pulls = fetch origin +refs/pull/*:refs/remotes/pull/*
 [user]
-	name = hachi-eiji
+	name = Eiji Hachiya
 	email = hachiyae@gmail.com
