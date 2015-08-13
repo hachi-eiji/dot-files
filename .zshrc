@@ -79,9 +79,18 @@ export COMPANY_DOT_FILE="/Users/hachiya_eiji/Documents/ca-dot-file"
 test -e $COMPANY_DOT_FILE/env.sh && source $COMPANY_DOT_FILE/env.sh
 
 # hub setting
-alias git='hub'
+#alias git='hub'
 
 # ctr-sがきかない対策
 stty -ixoff
 stty stop undef
 stty start undef
+
+## cdr system stuff.
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+add-zsh-hook chpwd chpwd_recent_dirs
+zstyle ':chpwd:*' recent-dirs-max 5000
+zstyle ':chpwd:*' recent-dirs-default yes
+zstyle ':completion:*' recent-dirs-insert both
+zstyle ':filter-select' case-insensitive yes 
+typeset -U name_of_the_variable

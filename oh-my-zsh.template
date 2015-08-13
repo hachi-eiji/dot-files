@@ -75,17 +75,3 @@ zstyle ':filter-select' extended-search yes # see below
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 #
-## cdr system stuff.
-autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
-add-zsh-hook chpwd chpwd_recent_dirs
-zstyle ':chpwd:*' recent-dirs-max 5000
-zstyle ':chpwd:*' recent-dirs-default yes
-zstyle ':completion:*' recent-dirs-insert both
-#source /opt/zaw/zaw.zsh
-zstyle ':filter-select' case-insensitive yes 
-#bindkey '^x^@' zaw-cdr
-#bindkey '^x^b' zaw-git-recent-branches
-#bindkey '^x^f' zaw-git-files
-#bindkey '^x^r' zaw-history
-#bindkey '^x^s' zaw-ssh-hosts
-typeset -U name_of_the_variable
