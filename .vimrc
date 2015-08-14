@@ -1,5 +1,6 @@
 filetype off                   " required!
 
+let mapleader = ","
 set number
 syntax on
 set t_Co=256
@@ -88,6 +89,10 @@ if filereadable(expand('~/.vimrc_js'))
   source ~/.vimrc_js
 endif
 
+if filereadable(expand('~/.vimrc_go'))
+  source ~/.vimrc_go
+endif
+
 " split window right side
 let g:netrw_altv = 1
 
@@ -103,3 +108,5 @@ au BufNewFile,BufRead *.md :set filetype=markdown
 
 filetype plugin indent on
 set imdisable
+
+
