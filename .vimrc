@@ -59,7 +59,7 @@ Bundle 'itchyny/lightline.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neomru.vim'
-"Bundle 'Shougo/neocomplete.vim'
+Bundle 'Shougo/neocomplete.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'fatih/vim-go'
 Bundle 'rizzatti/dash.vim'
@@ -69,6 +69,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'kannokanno/previm'
 Bundle 'opsplorer'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'majutsushi/tagbar'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
