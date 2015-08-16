@@ -31,6 +31,9 @@ set wrapscan
 "tag
 set tags=tags
 
+" オムニ補完のプレビューを無効にする
+set completeopt=menuone
+
 " カーソル行をハイライト
 set cursorline
 " カレントウィンドウにのみ罫線を引く
