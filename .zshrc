@@ -52,6 +52,11 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOR
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
+
+if type docker-machine > /dev/null 2>&1 ; then
+ eval "$(docker-machine env default)"
+fi
+
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(
     /opt/*/(s|)bin(N-/)
