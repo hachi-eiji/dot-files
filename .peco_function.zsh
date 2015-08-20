@@ -104,3 +104,14 @@ function peco-mosh (){
 }
 zle -N peco-mosh
 bindkey '^x^m' peco-mosh
+
+function peco-ghq() {
+    local selected_dir=$(ghq list --full-path | peco)
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-ghq 
+bindkey '^x^g' peco-ghq 
