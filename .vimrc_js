@@ -1,9 +1,6 @@
-" 補完
-Bundle 'scrooloose/syntastic'
-"Bundle 'Shougo/neocomplete'
 Bundle 'mattn/jscomplete-vim'
 Bundle 'myhere/vim-nodejs-complete'
-
+Bundle 'JavaScript-syntax'
 Bundle 'jelera/vim-javascript-syntax'
 " 整形
 Bundle 'maksimr/vim-jsbeautify'
