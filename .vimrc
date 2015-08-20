@@ -54,7 +54,6 @@ Bundle 'gmarik/vundle'
 Bundle 'kana/vim-fakeclip'
 Bundle 'JavaScript-syntax'
 Bundle 'mru.vim'
-Bundle 'taglist.vim'
 " markdown
 Bundle 'tpope/vim-markdown'
 Bundle 't9md/vim-choosewin'
@@ -103,6 +102,8 @@ set splitright
 
 let g:previm_open_cmd = 'open -a "Google Chrome"'
 nnoremap <silent> gp :PrevimOpen<CR>
+" tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " editorconfig
 let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
