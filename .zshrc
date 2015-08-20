@@ -70,7 +70,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Hom
 
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-#alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
+alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
 alias vimdiff='/Applications/MacVim.app/Contents/MacOS/vimdiff'
 alias tmux='tmux -u'
 alias t='tmux'
