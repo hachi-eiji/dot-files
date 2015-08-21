@@ -28,3 +28,6 @@
 [user]
 	name = Eiji Hachiya
 	email = hachiyae@gmail.com
+[ghq]
+  root = ~/development
+  root = ~/.go/current/src
