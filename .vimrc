@@ -57,7 +57,6 @@ Bundle 'mru.vim'
 Bundle 'tpope/vim-markdown'
 Bundle 't9md/vim-choosewin'
 Bundle 'itchyny/lightline.vim'
-Bundle 'tpope/vim-fugitive'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neomru.vim'
 Bundle 'Shougo/neocomplete.vim'
@@ -72,6 +71,9 @@ Bundle 'editorconfig/editorconfig-vim'
 " 補完
 Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
+" git
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
