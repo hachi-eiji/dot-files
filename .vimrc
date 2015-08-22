@@ -106,6 +106,7 @@ let g:previm_open_cmd = 'open -a "Google Chrome"'
 nnoremap <silent> gp :PrevimOpen<CR>
 " tagbar
 nmap <F8> :TagbarToggle<CR>
+nnoremap <silent> <C-L> :noh<C-L><CR>
 
 " editorconfig
 let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
