@@ -74,6 +74,8 @@ Bundle 'majutsushi/tagbar'
 " git
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -114,6 +116,24 @@ let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
 colorscheme jellybeans
 
 au BufNewFile,BufRead *.md :set filetype=markdown
+
+" neosnippet key mapping
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
 
 filetype plugin indent on
 set imdisable
