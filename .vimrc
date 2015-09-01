@@ -74,6 +74,7 @@ Bundle 'majutsushi/tagbar'
 " git
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'jiangmiao/auto-pairs'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
