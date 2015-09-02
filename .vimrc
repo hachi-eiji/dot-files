@@ -74,8 +74,8 @@ Bundle 'majutsushi/tagbar'
 " git
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
+Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
