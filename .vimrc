@@ -75,7 +75,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'Shougo/neosnippet'
-Bundle 'Shougo/neosnippet-snippets'
+Bundle 'hachi-eiji/neosnippet-snippets'
 Bundle 'jiangmiao/auto-pairs'
 
 " if you want to use overlay feature
