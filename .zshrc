@@ -102,3 +102,11 @@ zstyle ':chpwd:*' recent-dirs-default yes
 zstyle ':completion:*' recent-dirs-insert both
 zstyle ':filter-select' case-insensitive yes 
 typeset -U name_of_the_variable
+
+# The next line updates PATH for the Google Cloud SDK.
+GCP_ZSH="$HOME/google-cloud-sdk/path.zsh.inc"
+test -e $GCP_ZSH && source $GCP_ZSH
+
+# The next line enables shell command completion for gcloud.
+GCP_COMP="$HOME/google-cloud-sdk/completion.zsh.inc"
+test -e $GCP_COMP && source $GCP_COMP
