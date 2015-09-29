@@ -137,6 +137,10 @@ if has('conceal')
   set conceallevel=2 concealcursor=niv
 endif
 
+"タブ、空白、改行の可視化
+set list
+set listchars=tab:>.,trail:.,nbsp:%
+
 filetype plugin indent on
 set imdisable
 
