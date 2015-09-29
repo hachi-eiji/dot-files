@@ -78,6 +78,7 @@ Bundle 'Shougo/neosnippet'
 Bundle 'hachi-eiji/neosnippet-snippets'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'elixir-lang/vim-elixir'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -118,6 +119,8 @@ let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
 colorscheme jellybeans
 
 au BufNewFile,BufRead *.md :set filetype=markdown
+au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
+au BufRead,BufNewFile *.eex set filetype=eelixir
 
 " neosnippet key mapping
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
