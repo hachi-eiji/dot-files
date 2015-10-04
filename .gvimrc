@@ -11,3 +11,5 @@ set smartindent
 set guifont=Ricty\ Regular:h14
 
 source ~/.zshrc
+
+set imdisable
