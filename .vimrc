@@ -79,6 +79,7 @@ Bundle 'hachi-eiji/neosnippet-snippets'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'mattreduce/vim-mix'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
