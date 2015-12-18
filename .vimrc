@@ -42,6 +42,10 @@ augroup cch
   autocmd WinLeave * set nocursorline
   autocmd WinEnter,BufRead * set cursorline
 augroup END
+" pythonなどでインデントがわかりやすいようにしたい
+if expand("%:t") =~ ".*\.py"
+  set cursorcolumn
+endif
 
 hi clear CursorLine
 highlight CursorLine ctermbg=black guibg=black
