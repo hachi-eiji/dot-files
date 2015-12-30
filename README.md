@@ -99,17 +99,15 @@ mkdir -p $HOME/.config/peco
 ln -s $HOME/.config/peco .config/peco/config.json
 ```
 
-install oh-my-zsh
+install zplug
 --
 
 ```
-git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
-## remove link
-rm ~/.zshrc
-ln -s $DOT_FILE_PATH/oh-my-zsh.template ~/.zshrc
-ln -s $DOT_FILE_PATH/hachi-simple.zsh-theme ~/.oh-my-zsh/themes/hachi-simple.zsh-theme
-ln -s $DOT_FILE_PATH/.zshrc $ZSH_CUSTOM/my-zsh-config.zsh
-ln -s $DOT_FILE_PATH/.peco_function.zsh $HOME/.peco_function.zsh
+curl -fLo ~/.zplug/zplug --create-dirs https://git.io/zplug
+ln -s $DOT_FILE_PATH/zplug.zsh $HOME/.zshrc
+source $HOME/.zshrc
+ln -s ln -s $DOT_FILE_PATH/hachi.zsh-theme $HOME/.zplug/repos/robbyrussell/oh-my-zsh/themes/
+source $HOME/.zshrc
 ```
 
 install hub
@@ -119,7 +117,7 @@ https://github.com/github/hub
 
 ```
 brew install --HEAD hub
-ln -s $DOT_FILE_PATH/dot-files/.zsh-functions $HOME/.zsh-functions
+ln -s $DOT_FILE_PATH/.zsh-functions $HOME/.zsh-functions
 ```
 
 install nvm
