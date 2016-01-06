@@ -64,7 +64,7 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-eval "$(docker-machine env default)"
+eval "$(docker-machine env default </dev/null)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(
