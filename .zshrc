@@ -43,7 +43,7 @@ source $(brew --prefix nvm)/nvm.sh
 # vim config 
 # add .bash_profile
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
-export SHELL='/bin/zsh'
+export SHELL='/usr/local/bin/zsh'
 # User configuration
 export GOPATH=$HOME/.go/current
 export GOROOT=/usr/local/opt/go/libexec
@@ -56,9 +56,7 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-if type docker-machine > /dev/null 2>&1 ; then
- eval "$(docker-machine env default)"
-fi
+eval "$(docker-machine env default)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(
