@@ -106,7 +106,7 @@ install zplug
 curl -fLo ~/.zplug/zplug --create-dirs https://git.io/zplug
 ln -s $DOT_FILE_PATH/zplug.zsh $HOME/.zshrc
 source $HOME/.zshrc
-ln -s $DOT_FILE_PATH/hachi.zsh-theme $HOME/.zplug/repos/robbyrussell/oh-my-zsh/themes/
+ln -s ln -s $DOT_FILE_PATH/hachi.zsh-theme $HOME/.zplug/repos/robbyrussell/oh-my-zsh/themes/
 source $HOME/.zshrc
 ```
 
