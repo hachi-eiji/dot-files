@@ -50,7 +50,7 @@ ZSH_THEME="hachi"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx mvn mosh tmux golang)
+plugins=(git mvn mosh tmux golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,12 +62,6 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 #
-zstyle ':filter-select:highlight' matched fg=yellow,standout
-zstyle ':filter-select' max-lines 10 # use 10 lines for filter-select
-zstyle ':filter-select' max-lines -10 # use $LINES - 10 for filter-select
-zstyle ':filter-select' rotate-list yes # enable rotation for filter-select
-zstyle ':filter-select' case-insensitive yes # enable case-insensitive search
-zstyle ':filter-select' extended-search yes # see below
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
