@@ -31,3 +31,5 @@
 [ghq]
   root = ~/development
   root = ~/.go/current/src
+[rebase]
+  autostash=true
