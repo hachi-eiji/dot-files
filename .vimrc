@@ -149,6 +149,7 @@ set list
 set listchars=tab:>.,trail:.,nbsp:%
 
 " ctrp
+let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll|gif|png|jpeg|jpg|pdf|mp3)$'
