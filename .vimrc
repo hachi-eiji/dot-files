@@ -61,7 +61,6 @@ Bundle 'mru.vim'
 Bundle 'tpope/vim-markdown'
 Bundle 't9md/vim-choosewin'
 Bundle 'itchyny/lightline.vim'
-Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neomru.vim'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'tpope/vim-endwise'
@@ -84,6 +83,9 @@ Bundle 'jiangmiao/auto-pairs'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'mattreduce/vim-mix'
+Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'glidenote/memolist.vim'
+Bundle 'fuenor/qfixgrep'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -95,9 +97,6 @@ let g:neocomplete#enable_at_startup = 1
 if filereadable(expand('~/.vimrc.lightline'))
   set laststatus=2
   source ~/.vimrc.lightline
-endif
-if filereadable(expand('~/.vimrc.unite'))
-  source ~/.vimrc.unite
 endif
 
 if filereadable(expand('~/.vimrc_js'))
@@ -148,6 +147,24 @@ endif
 "タブ、空白、改行の可視化
 set list
 set listchars=tab:>.,trail:.,nbsp:%
+
+" ctrp
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+" memo
+nnoremap <Leader>mn  :MemoNew<CR>
+nnoremap <Leader>ml  :MemoList<CR>
+nnoremap <Leader>mg  :MemoGrep<CR>
+let g:memolist_qfixgrep = 1
+
+"qfixgrep
+" QuickFixウィンドウでもプレビューや絞り込みを有効化
+let QFixWin_EnableMode = 1
+" QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
+let QFix_UseLocationList = 1
 
 filetype plugin indent on
 set imdisable
