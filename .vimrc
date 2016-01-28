@@ -151,8 +151,7 @@ set listchars=tab:>.,trail:.,nbsp:%
 
 " ctrp
 nnoremap <silent> <C-o> :let g:cpsm_match_empty_query = 0<CR>:CtrlPMRU<CR>
-nnoremap <silent> <C-p> :let g:cpsm_match_empty_query = 0<CR>:CtrlP<CR>
-
+nnoremap <silent> <C-p> :let g:cpsm_match_empty_query = 1<CR>:CtrlP<CR>
 let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
