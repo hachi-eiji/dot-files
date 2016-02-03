@@ -37,8 +37,7 @@ _cache_hosts=($( print_known_hosts ))
 source $HOME/.peco_function.zsh
 
 # nodejs setting
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # vim config 
 # add .bash_profile

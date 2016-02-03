@@ -122,11 +122,11 @@ brew install --HEAD hub
 ln -s $DOT_FILE_PATH/dot-files/.zsh-functions $HOME/.zsh-functions
 ```
 
-install nvm
+install nodebrew
 --
 
 ```
-brew install nvm
+curl -L git.io/nodebrew | perl - setup
 ```
 
 install editorconfig
