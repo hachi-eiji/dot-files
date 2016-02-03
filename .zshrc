@@ -50,10 +50,10 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOROOT/bin
 #rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+eval "$(rbenv init - --no-rehash)"
 eval "$(direnv hook zsh)"
 export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
+eval "$(pyenv init - --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 
 eval "$(docker-machine env default </dev/null)"
