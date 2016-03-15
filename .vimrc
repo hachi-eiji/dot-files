@@ -15,6 +15,7 @@ set smartindent
 set autoindent
 set showmatch " 対応括弧を強調
 set smarttab  " 新しい行を作った時に自動インデント
+set formatoptions=q
 
 " backup
 set clipboard+=unnamed
