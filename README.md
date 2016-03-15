@@ -36,7 +36,7 @@ install tmux
 --
 
 ```
-brew install tmux
+brew install tmux reattach-to-user-namespace
 gem install tmuxinator
 
 ```
