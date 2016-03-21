@@ -8,10 +8,14 @@
         <appname>MACVIM</appname>
         <equal>org.vim.MacVim</equal>
     </appdef>
+    <appdef>
+        <appname>INTELLIJ</appname>
+        <equal>com.jetbrains.intellij</equal>
+    </appdef>
     <item>
         <name>Leave Insert Mode with EISUU (vim keybind apps)</name>
         <identifier>private.vim_keybind_apps_esc_with_eisuu</identifier>
-        <only>iTERM2,TERMINAL,MACVIM</only>
+        <only>iTERM2,TERMINAL,MACVIM,INTELLIJ</only>
         <autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
         <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, VK_CONTROL, KeyCode::BRACKET_RIGHT, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
     </item>
