@@ -5,6 +5,7 @@ set number
 syntax on
 set t_Co=256
 set antialias
+set ambiwidth=double
 
 " tab setting
 set expandtab
