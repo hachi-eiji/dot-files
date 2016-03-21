@@ -94,7 +94,7 @@ let g:choosewin_overlay_enable          = 1
 " overlay font broke on mutibyte buffer?
 let g:choosewin_overlay_clear_multibyte = 1
 nmap ; <Plug>(choosewin)
-let g:neocomplete#enable_at_startup = 1
+
 
 if filereadable(expand('~/.vimrc.lightline'))
   set laststatus=2
@@ -107,6 +107,10 @@ endif
 
 if filereadable(expand('~/.vimrc_go'))
   source ~/.vimrc_go
+endif
+
+if filereadable(expand('~/.vimrc_neocomplete'))
+  source ~/.vimrc_neocomplete
 endif
 
 " split window right side
@@ -178,5 +182,3 @@ let g:vim_json_syntax_conceal=0
 
 filetype plugin indent on
 set imdisable
-
-
