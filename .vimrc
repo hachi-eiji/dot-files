@@ -44,8 +44,8 @@ augroup cch
   autocmd WinLeave * set nocursorline
   autocmd WinEnter,BufRead * set cursorline
 augroup END
-" pythonなどでインデントがわかりやすいようにしたい
-if expand("%:t") =~ ".*\.py"
+" インデントがわかりやすいようにしたい
+if expand("%:t") =~ ".*\.py$" || expand("%:t") =~ ".*\.rb$"
   set cursorcolumn
 endif
 
