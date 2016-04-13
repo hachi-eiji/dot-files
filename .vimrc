@@ -178,6 +178,9 @@ let QFixWin_EnableMode = 1
 " QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
 let QFix_UseLocationList = 1
 
+"dash
+nmap <silent> <leader>d <Plug>DashSearch
+
 set conceallevel=0
 let g:vim_json_syntax_conceal=0
 
