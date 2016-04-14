@@ -44,10 +44,6 @@ augroup cch
   autocmd WinLeave * set nocursorline
   autocmd WinEnter,BufRead * set cursorline
 augroup END
-" インデントがわかりやすいようにしたい
-if expand("%:t") =~ ".*\.py$" || expand("%:t") =~ ".*\.rb$"
-  set cursorcolumn
-endif
 
 hi clear CursorLine
 highlight CursorLine ctermbg=black guibg=black
@@ -89,6 +85,7 @@ Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'nixprime/cpsm'
 Bundle 'glidenote/memolist.vim'
 Bundle 'fuenor/qfixgrep'
+Bundle 'tomtom/tcomment_vim'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -171,6 +168,9 @@ nnoremap <Leader>mn  :MemoNew<CR>
 nnoremap <Leader>ml  :MemoList<CR>
 nnoremap <Leader>mg  :MemoGrep<CR>
 let g:memolist_qfixgrep = 1
+
+" dash
+nmap <silent> <leader>d <Plug>DashSearch
 
 "qfixgrep
 " QuickFixウィンドウでもプレビューや絞り込みを有効化
