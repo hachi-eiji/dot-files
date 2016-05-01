@@ -30,6 +30,10 @@ set smartcase " 検索文字列に大文字が含まれてる時は区別
 set incsearch
 set wrapscan
 
+" ターミナルがおそい対策
+set lazyredraw
+set ttyfast
+
 "tag
 set tags=tags
 
@@ -86,6 +90,8 @@ Bundle 'nixprime/cpsm'
 Bundle 'glidenote/memolist.vim'
 Bundle 'fuenor/qfixgrep'
 Bundle 'tomtom/tcomment_vim'
+Bundle 'Chiel92/vim-autoformat'
+Bundle 'tpope/vim-bundler'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -129,6 +135,7 @@ colorscheme jellybeans
 au BufNewFile,BufRead *.md :set filetype=markdown
 au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
 au BufRead,BufNewFile *.eex set filetype=eelixir
+au BufRead,BufNewFile *.rb let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '|':'|'}
 
 " neosnippet key mapping
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
