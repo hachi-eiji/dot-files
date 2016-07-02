@@ -33,3 +33,5 @@
   root = ~/.go/current/src
 [rebase]
   autostash=true
+[credential]
+	helper = osxkeychain

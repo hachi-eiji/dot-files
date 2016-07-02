@@ -94,6 +94,7 @@ Bundle 'Chiel92/vim-autoformat'
 Bundle 'tpope/vim-bundler'
 Bundle 'thinca/vim-quickrun'
 Bundle 'Shougo/vimproc.vim'
+Bundle 'tpope/vim-rails'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -168,7 +169,7 @@ let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll|gif|png|jpeg|jpg|pdf|mp3)$'
+  \ 'file': '\v\.(exe|so|dll|gif|png|jpeg|jpg|pdf|mp3|cache)$'
   \ }
 
 " memo
