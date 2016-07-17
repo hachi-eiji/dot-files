@@ -95,6 +95,7 @@ Bundle 'tpope/vim-bundler'
 Bundle 'thinca/vim-quickrun'
 Bundle 'Shougo/vimproc.vim'
 Bundle 'tpope/vim-rails'
+Bundle 'kshenoy/vim-signature'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -199,6 +200,9 @@ let g:quickrun_config = {'_': {
       \ 'outputter/error/error'   : 'quickfix',
       \ 'outputter/buffer/close_on_empty' : 1,
       \ }}
+
+" autoformat
+noremap <F3> :Autoformat<CR>
 
 filetype plugin indent on
 set imdisable
