@@ -83,8 +83,6 @@ Bundle 'Shougo/neosnippet'
 Bundle 'hachi-eiji/neosnippet-snippets'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'mattreduce/vim-mix'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'nixprime/cpsm'
 Bundle 'glidenote/memolist.vim'
@@ -137,8 +135,6 @@ let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
 colorscheme jellybeans
 
 au BufNewFile,BufRead *.md :set filetype=markdown
-au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
-au BufRead,BufNewFile *.eex set filetype=eelixir
 au BufRead,BufNewFile *.rb let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '|':'|'}
 
 " neosnippet key mapping
