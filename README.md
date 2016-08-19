@@ -75,18 +75,9 @@ install Ricky
 --
 
 ```
-cd /tmp
-brew tap sanemat/font
-brew install ricty
-## このへんはコマンドに出てくる
-cp -f /usr/local/Cellar/ricty/3.2.2/share/fonts/Ricty*.ttf ~/Library/Fonts/
-fc-cache -vf
-# patch for vim lightline
-git clone git@github.com:Lokaltog/vim-powerline.git
-cd vim-powerline/fontpatcher
-fontforge -lang=py -script fontpatcher ~/Library/Fonts/Ricty-Bold.ttf
-fontforge -lang=py -script fontpatcher ~/Library/Fonts/Ricty-Regular.ttf
-mv Ricty* ~/Library/Fonts
+$ brew upgrade ricty --vim-powerline --powerline
+$ cp -f /usr/local/Cellar/ricty/4.0.1/share/fonts/Ricty*.ttf ~/Library/Fonts/
+$ fc-cache -vf
 ```
 
 install peco
@@ -111,6 +102,16 @@ ln -s $DOT_FILE_PATH/hachi.zsh-theme ~/.oh-my-zsh/themes/hachi.zsh-theme
 ln -s $DOT_FILE_PATH/.zshrc $ZSH_CUSTOM/my-zsh-config.zsh
 ln -s $DOT_FILE_PATH/.peco_function.zsh $HOME/.peco_function.zsh
 ```
+
+install rbenv
+--
+* https://github.com/rbenv/rbenv#homebrew-on-mac-os-x
+* https://github.com/rbenv/ruby-build#installing-with-homebrew-for-os-x-users
+
+install pyenv
+--
+* https://github.com/yyuu/pyenv#command-reference
+* https://github.com/yyuu/pyenv-virtualenv
 
 install hub
 --
