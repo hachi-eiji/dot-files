@@ -188,6 +188,16 @@ let QFix_UseLocationList = 1
 set conceallevel=0
 let g:vim_json_syntax_conceal=0
 
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " quick-run
 let g:quickrun_config = {'_': {
       \'runner' : 'vimproc',
