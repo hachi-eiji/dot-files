@@ -75,7 +75,7 @@ install Ricky
 --
 
 ```
-$ brew upgrade ricty --vim-powerline --powerline
+$ brew reinstall --powerline --vim-powerline ricty
 $ cp -f /usr/local/Cellar/ricty/4.0.1/share/fonts/Ricty*.ttf ~/Library/Fonts/
 $ fc-cache -vf
 ```
