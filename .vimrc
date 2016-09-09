@@ -6,6 +6,7 @@ syntax on
 set t_Co=256
 set antialias
 set ambiwidth=double
+set wildignore+=vendor/**
 
 " tab setting
 set expandtab
@@ -184,6 +185,9 @@ nmap <silent> <leader>d <Plug>DashSearch
 let QFixWin_EnableMode = 1
 " QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
 let QFix_UseLocationList = 0
+let MyGrep_ExcludeReg='vendor/.*$|node_module/.*$'
+let QFix_PreviewExclude = '\.pdf$\|\.mp3$\|\.jpg$\|\.bmp$\|\.png$\|\.zip$\|\.rar$\|\.exe$\|\.dll$\|\.lnk$'
+
 
 set conceallevel=0
 let g:vim_json_syntax_conceal=0
