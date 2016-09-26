@@ -103,6 +103,8 @@ ln -s $DOT_FILE_PATH/.zshrc $ZSH_CUSTOM/my-zsh-config.zsh
 ln -s $DOT_FILE_PATH/.peco_function.zsh $HOME/.peco_function.zsh
 ```
 
+TODO: use [anyenv](https://github.com/riywo/anyenv)
+
 install rbenv
 --
 * https://github.com/rbenv/rbenv#homebrew-on-mac-os-x
@@ -113,6 +115,10 @@ install pyenv
 * https://github.com/yyuu/pyenv#command-reference
 * https://github.com/yyuu/pyenv-virtualenv
 
+install ndenv
+--
+see https://github.com/riywo/ndenv
+
 install hub
 --
 
@@ -122,11 +128,6 @@ https://github.com/github/hub
 brew install --HEAD hub
 ln -s $DOT_FILE_PATH/dot-files/.zsh-functions $HOME/.zsh-functions
 ```
-
-install ndenv
---
-
-see https://github.com/riywo/ndenv
 
 install editorconfig
 --
