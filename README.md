@@ -123,12 +123,10 @@ brew install --HEAD hub
 ln -s $DOT_FILE_PATH/dot-files/.zsh-functions $HOME/.zsh-functions
 ```
 
-install nodebrew
+install ndenv
 --
 
-```
-curl -L git.io/nodebrew | perl - setup
-```
+see https://github.com/riywo/ndenv
 
 install editorconfig
 --
