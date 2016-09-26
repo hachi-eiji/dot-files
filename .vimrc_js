@@ -1,12 +1,14 @@
 Bundle 'mattn/jscomplete-vim'
 Bundle 'myhere/vim-nodejs-complete'
-Bundle 'JavaScript-syntax'
-Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
 " 整形
 Bundle 'maksimr/vim-jsbeautify'
 " 辞書
 Bundle 'guileen/vim-node-dict'
 Bundle 'moll/vim-node'
+Bundle 'mxw/vim-jsx'
+
+au BufRead,BufNewFile *.jsx set filetype=javascript.jsx
 
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_enable_signs= 1

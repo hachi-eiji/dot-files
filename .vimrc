@@ -65,7 +65,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 't9md/vim-choosewin'
 Bundle 'itchyny/lightline.vim'
 Bundle 'Shougo/neomru.vim'
-Bundle 'Shougo/neocomplete.vim'
+"Bundle 'Shougo/neocomplete.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'rizzatti/dash.vim'
 Bundle 'tomasr/molokai'
@@ -185,7 +185,8 @@ nmap <silent> <leader>d <Plug>DashSearch
 let QFixWin_EnableMode = 1
 " QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
 let QFix_UseLocationList = 0
-let MyGrep_ExcludeReg='vendor/.*$|node_module/.*$'
+"let MyGrep_ExcludeReg='vendor/.*$|./node_module/.*$'
+let MyGrep_ExcludeReg = '[~#]$\|\.bak$\|\.o$\|\.obj$\|\.exe$\|[/\\]tags$\|^tags$\|\/\\]node_modules[/\\]]\|\/\\]vendor[/\\]]'
 let QFix_PreviewExclude = '\.pdf$\|\.mp3$\|\.jpg$\|\.bmp$\|\.png$\|\.zip$\|\.rar$\|\.exe$\|\.dll$\|\.lnk$'
 
 
