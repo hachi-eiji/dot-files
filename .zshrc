@@ -85,9 +85,6 @@ alias ls='ls -G'
 alias grum='git fetch upstream && git rebase upstream/master'
 test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
 
-export COMPANY_DOT_FILE="/Users/a12390/development/ghe.ca-tools.org/hachiya-eiji/ca-dot-file"
-test -e $COMPANY_DOT_FILE/env.sh && source $COMPANY_DOT_FILE/env.sh
-
 # hub setting
 #alias git='hub'
 
