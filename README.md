@@ -123,10 +123,10 @@ brew install --HEAD hub
 ln -s $DOT_FILE_PATH/dot-files/.zsh-functions $HOME/.zsh-functions
 ```
 
-install ndenv
+install nodenv
 --
 
-see https://github.com/riywo/ndenv
+see https://github.com/nodenv/nodenv#homebrew-on-mac-os-x
 
 install editorconfig
 --
