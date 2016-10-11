@@ -56,12 +56,6 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init - --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 
-docker-machine ls | grep default | grep "Run" > /dev/null
-run_docker_machine="$?"
-if [ "$run_docker_machine" -eq 0 ]; then
-  eval "$(docker-machine env default </dev/null)"
-fi
-
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(
     /opt/*/(s|)bin(N-/)

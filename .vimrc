@@ -32,6 +32,21 @@ set showmatch " 対応括弧を強調
 set smarttab  " 新しい行を作った時に自動インデント
 set formatoptions=q
 
+set showmatch " 括弧の対応関係を一瞬表示する
+source $VIMRUNTIME/macros/matchit.vim " Vimの「%」を拡張する
+
+" ペーストで右にならない
+if &term =~ "xterm"
+    let &t_SI .= "\e[?2004h"
+    let &t_EI .= "\e[?2004l"
+    let &pastetoggle = "\e[201~"
+    function XTermPasteBegin(ret)
+        set paste
+        return a:ret
+    endfunction
+    inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
+endif
+
 " backup
 set clipboard+=unnamed
 set backupdir=/tmp
@@ -108,6 +123,8 @@ Bundle 'thinca/vim-quickrun'
 Bundle 'Shougo/vimproc.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'kshenoy/vim-signature'
+"末尾の全角と半角の空白文字を赤くハイライト
+Bundle 'bronson/vim-trailing-whitespace' 
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
