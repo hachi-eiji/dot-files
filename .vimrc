@@ -124,7 +124,8 @@ Bundle 'Shougo/vimproc.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'kshenoy/vim-signature'
 "末尾の全角と半角の空白文字を赤くハイライト
-Bundle 'bronson/vim-trailing-whitespace' 
+Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'mattn/emmet-vim'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
