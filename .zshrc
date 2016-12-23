@@ -55,6 +55,8 @@ eval "$(direnv hook zsh)"
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init - --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
+export PATH="$HOME/.phpenv/bin:$PATH"
+eval "$(phpenv init - --no-rehash)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(
