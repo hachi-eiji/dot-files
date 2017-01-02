@@ -1,6 +1,6 @@
 filetype off                   " required!
 
-let mapleader = ","
+let mapleader = "\<Space>"
 set number
 syntax on
 set t_Co=256
