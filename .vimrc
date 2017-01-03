@@ -115,7 +115,6 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'nixprime/cpsm'
 Bundle 'glidenote/memolist.vim'
-Bundle 'fuenor/qfixgrep'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'Chiel92/vim-autoformat'
 Bundle 'tpope/vim-bundler'
@@ -126,6 +125,8 @@ Bundle 'kshenoy/vim-signature'
 "末尾の全角と半角の空白文字を赤くハイライト
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mattn/emmet-vim'
+" grep file
+Bundle 'mileszs/ack.vim'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -206,19 +207,9 @@ let g:ctrlp_custom_ignore = {
 nnoremap <Leader>mn  :MemoNew<CR>
 nnoremap <Leader>ml  :MemoList<CR>
 nnoremap <Leader>mg  :MemoGrep<CR>
-let g:memolist_qfixgrep = 1
 
 " dash
 nmap <silent> <leader>d <Plug>DashSearch
-
-"qfixgrep
-" QuickFixウィンドウでもプレビューや絞り込みを有効化
-let QFixWin_EnableMode = 1
-" QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
-let QFix_UseLocationList = 0
-let MyGrep_ExcludeReg = '[~#]$\|\.bak$\|\.o$\|\.obj$\|\.exe$\|[/\\]tags$\|^tags$\|\.log$\|\.cache\|[/\\]bundle[/\\]\|[/\\]node_modules[/\\]'
-let QFix_PreviewExclude = '\.pdf$\|\.mp3$\|\.jpg$\|\.bmp$\|\.png$\|\.zip$\|\.rar$\|\.exe$\|\.dll$\|\.lnk$'
-
 
 set conceallevel=0
 let g:vim_json_syntax_conceal=0
