@@ -45,8 +45,6 @@ eval "$(ndenv init - --no-rehash)"
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 export SHELL='/usr/local/bin/zsh'
 # User configuration
-export GOPATH=$HOME/.go/current
-export GOROOT=/usr/local/opt/go/libexec
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOROOT/bin
 #rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -57,6 +55,9 @@ eval "$(pyenv init - --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 export PATH="$HOME/.phpenv/bin:$PATH"
 eval "$(phpenv init - --no-rehash)"
+# https://github.com/syndbg/goenv/
+export GOENV_ROOT=$HOME/.goenv
+if which goenv > /dev/null; then eval "$(goenv init - --no-rehash)"; fi
 
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(
