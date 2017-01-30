@@ -53,6 +53,7 @@ eval "$(direnv hook zsh)"
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init - --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PATH="$HOME/.phpenv/bin:$PATH"
 eval "$(phpenv init - --no-rehash)"
 # https://github.com/syndbg/goenv/
