@@ -127,6 +127,8 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mattn/emmet-vim'
 " grep file
 Bundle 'mileszs/ack.vim'
+Bundle 'leafgarland/typescript-vim'
+Bundle 'fuenor/qfixgrep'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -169,6 +171,7 @@ colorscheme jellybeans
 
 au BufNewFile,BufRead *.md :set filetype=markdown
 au BufRead,BufNewFile *.rb let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '|':'|'}
+au BufNewFile,BufRead *.ts :set filetype=typescript
 
 " neosnippet key mapping
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -204,9 +207,17 @@ let g:ctrlp_custom_ignore = {
 
 " memo
 "let g:memolist_memo_suffix = "txt"
+let g:memolist_qfixgrep=1
 nnoremap <Leader>mn  :MemoNew<CR>
 nnoremap <Leader>ml  :MemoList<CR>
 nnoremap <Leader>mg  :MemoGrep<CR>
+
+" QFixGrep
+" プレビューや絞り込みの拡張機能有効化オプション
+" 1 : QuickFix/ロケーションリストの両方で有効
+let QFixWin_EnableMode = 1
+" QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
+let QFix_UseLocationList = 0
 
 " dash
 nmap <silent> <leader>d <Plug>DashSearch
