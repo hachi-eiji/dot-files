@@ -125,8 +125,6 @@ Bundle 'kshenoy/vim-signature'
 "末尾の全角と半角の空白文字を赤くハイライト
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mattn/emmet-vim'
-" grep file
-Bundle 'mileszs/ack.vim'
 Bundle 'leafgarland/typescript-vim'
 Bundle 'fuenor/qfixgrep'
 
