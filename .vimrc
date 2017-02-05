@@ -218,6 +218,8 @@ nnoremap <Leader>mg  :MemoGrep<CR>
 let QFixWin_EnableMode = 1
 " QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
 let QFix_UseLocationList = 0
+let MyGrep_ExcludeReg = '[~#]$\|\.bak$\|\.o$\|\.obj$\|\.exe$\|[/\\]tags$\|^tags$\|\.log$\|\.cache\|[/\\]bundle[/\\]\|[/\\]node_modules[/\\]'
+let QFix_PreviewExclude = '\.pdf$\|\.mp3$\|\.jpg$\|\.bmp$\|\.png$\|\.zip$\|\.rar$\|\.exe$\|\.dll$\|\.lnk$'
 
 " dash
 nmap <silent> <leader>d <Plug>DashSearch
