@@ -125,6 +125,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mattn/emmet-vim'
 Bundle 'leafgarland/typescript-vim'
 Bundle 'fuenor/qfixgrep'
+Bundle 'mileszs/ack.vim'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
