@@ -13,5 +13,6 @@ bind diff  B !git rebase -i %(commit)
 
 bind main S !@hub browse -- commit/%(commit)
 bind diff S !@hub browse -- commit/%(commit)
+bind generic P @sh -c 'hub browse -- commit/%(commit)'
 
 color cursor white black bold 
