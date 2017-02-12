@@ -124,8 +124,7 @@ Bundle 'kshenoy/vim-signature'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mattn/emmet-vim'
 Bundle 'leafgarland/typescript-vim'
-Bundle 'fuenor/qfixgrep'
-Bundle 'mileszs/ack.vim'
+Bundle 'rking/ag.vim'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -204,19 +203,9 @@ let g:ctrlp_custom_ignore = {
 
 " memo
 "let g:memolist_memo_suffix = "txt"
-let g:memolist_qfixgrep=1
 nnoremap <Leader>mn  :MemoNew<CR>
 nnoremap <Leader>ml  :MemoList<CR>
 nnoremap <Leader>mg  :MemoGrep<CR>
-
-" QFixGrep
-" プレビューや絞り込みの拡張機能有効化オプション
-" 1 : QuickFix/ロケーションリストの両方で有効
-let QFixWin_EnableMode = 1
-" QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
-let QFix_UseLocationList = 0
-let MyGrep_ExcludeReg = '[~#]$\|\.bak$\|\.o$\|\.obj$\|\.exe$\|[/\\]tags$\|^tags$\|\.log$\|\.cache\|[/\\]bundle[/\\]\|[/\\]node_modules[/\\]'
-let QFix_PreviewExclude = '\.pdf$\|\.mp3$\|\.jpg$\|\.bmp$\|\.png$\|\.zip$\|\.rar$\|\.exe$\|\.dll$\|\.lnk$'
 
 " dash
 nmap <silent> <leader>d <Plug>DashSearch
