@@ -44,6 +44,7 @@ eval "$(ndenv init - --no-rehash)"
 # add .bash_profile
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 export SHELL='/usr/local/bin/zsh'
+export GOPATH=$HOME/.go/current
 # User configuration
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOROOT/bin
 #rbenv
