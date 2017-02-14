@@ -11,8 +11,6 @@ set tree-view = date:default author:full id file-size:units mode file-name
 bind main  B !git rebase -i %(commit)
 bind diff  B !git rebase -i %(commit)
 
-bind main S !@hub browse -- commit/%(commit)
-bind diff S !@hub browse -- commit/%(commit)
 bind generic P @sh -c 'hub browse -- commit/%(commit)'
 
 color cursor white black bold 
