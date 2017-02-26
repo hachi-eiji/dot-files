@@ -124,7 +124,9 @@ Bundle 'kshenoy/vim-signature'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mattn/emmet-vim'
 Bundle 'leafgarland/typescript-vim'
-Bundle 'rking/ag.vim'
+Bundle 'nazo/pt.vim'
+Bundle 'othree/html5.vim'
+Bundle 'hail2u/vim-css3-syntax'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
