@@ -156,7 +156,7 @@ endif
 let g:netrw_altv = 1
 set splitright
 
-let g:previm_open_cmd = 'open -a "Google Chrome"'
+let g:previm_open_cmd = 'open'
 nnoremap <silent> gp :PrevimOpen<CR>
 " tagbar
 nmap <F12> :TagbarToggle<CR>
