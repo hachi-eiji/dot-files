@@ -1,3 +1,5 @@
+[include]
+  path = .gitconfig.local
 [core]
   excludesfile = ~/.gitignore_global
   autocrlf = input
@@ -25,9 +27,6 @@
   com = checkout master
   ac = !git add -A && git commit
   fetch-pulls = fetch origin +refs/pull/*:refs/remotes/pull/*
-[user]
-	name = Eiji Hachiya
-	email = hachiyae@gmail.com
 [ghq]
   root = ~/development
   root = ~/.go/current/src
