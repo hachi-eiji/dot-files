@@ -16,7 +16,7 @@
   tool = vimdiff
 [alias]
   ad = add
-  fto = fetch origin
+  fto = fetch -p origin
   cm = commit
   s  = status
   st = status -sb
