@@ -127,6 +127,7 @@ Bundle 'leafgarland/typescript-vim'
 Bundle 'nazo/pt.vim'
 Bundle 'othree/html5.vim'
 Bundle 'hail2u/vim-css3-syntax'
+Bundle 'szw/vim-tags'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -236,6 +237,9 @@ let g:quickrun_config = {'_': {
 
 " autoformat
 noremap <F3> :Autoformat<CR>
+
+" tagsジャンプの時に複数ある時は一覧表示
+nnoremap <C-]> g<C-]> 
 
 filetype plugin indent on
 set imdisable
