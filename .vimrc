@@ -110,6 +110,7 @@ Bundle 'Shougo/neosnippet'
 Bundle 'hachi-eiji/neosnippet-snippets'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/ruby-matchit'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'nixprime/cpsm'
 Bundle 'glidenote/memolist.vim'
@@ -131,6 +132,8 @@ Bundle 'szw/vim-tags'
 " Rspec
 Bundle 'tpope/vim-dispatch'
 Bundle 'thoughtbot/vim-rspec'
+" bookmark
+Bundle 'MattesGroeger/vim-bookmarks'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
