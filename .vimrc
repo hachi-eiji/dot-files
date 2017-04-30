@@ -128,6 +128,9 @@ Bundle 'nazo/pt.vim'
 Bundle 'othree/html5.vim'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'szw/vim-tags'
+" Rspec
+Bundle 'tpope/vim-dispatch'
+Bundle 'thoughtbot/vim-rspec'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -237,6 +240,14 @@ let g:quickrun_config = {'_': {
 
 " autoformat
 noremap <F3> :Autoformat<CR>
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+let g:rspec_command = "Dispatch bundle exec rspec {spec}"
+" let g:rspec_runner = "os_x_iterm2"
 
 " tagsジャンプの時に複数ある時は一覧表示
 nnoremap <C-]> g<C-]> 
