@@ -63,9 +63,6 @@ set wrapscan
 set lazyredraw
 set ttyfast
 
-"tag
-set tags=tags
-
 " オムニ補完のプレビューを無効にする
 set completeopt=menuone
 
@@ -248,12 +245,12 @@ noremap <F3> :Autoformat<CR>
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = "Dispatch bundle exec rspec {spec}"
-" let g:rspec_runner = "os_x_iterm2"
+let g:rspec_runner = "os_x_iterm2"
 
 " tagsジャンプの時に複数ある時は一覧表示
-nnoremap <C-]> g<C-]> 
+nnoremap <C-]> g<C-]>
+let vim_tags_ctags_binary= "/Applications/MacVim.app/Contents/MacOS/ctags"
 
 filetype plugin indent on
 set imdisable
