@@ -4,10 +4,10 @@
 
 let g:lightline = {
         \ 'colorscheme': 'jellybeans',
-				\ 'active' : {
+        \ 'active' : {
         \   'left': [
         \     ['mode', 'paste'],
-        \     ['fugitive', 'gitgutter', 'filename'],
+        \     ['fugitive', 'gitgutter', 'filename', 'ale'],
         \   ]
 				\ },
 				\ 'component': {
@@ -19,7 +19,8 @@ let g:lightline = {
 					\   'modified': 'MyModified',
 					\   'readonly': 'MyReadonly',
 					\   'fugitive': 'MyFugitive',
-					\   'filename': 'MyFilename'
+					\   'filename': 'MyFilename',
+                                        \   'ale': 'ALEStatus'
 				\ }
 				\ }
 
@@ -49,4 +50,8 @@ function! MyFugitive()
   catch
   endtry
   return ''
+endfunction
+
+function! ALEStatus()
+  return ALEGetStatusLine()
 endfunction

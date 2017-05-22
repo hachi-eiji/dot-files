@@ -98,7 +98,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'kannokanno/previm'
 Bundle 'editorconfig/editorconfig-vim'
 " 補完
-Bundle 'scrooloose/syntastic'
+Bundle 'w0rp/ale'
 Bundle 'majutsushi/tagbar'
 " git
 Bundle 'tpope/vim-fugitive'
@@ -219,15 +219,12 @@ nmap <silent> <leader>d <Plug>DashSearch
 set conceallevel=0
 let g:vim_json_syntax_conceal=0
 
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" w0rp/ale
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
+let g:ale_statusline_format = ['E:%d', 'W:%d', '']
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " quick-run
 let g:quickrun_config = {'_': {
