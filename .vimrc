@@ -125,7 +125,6 @@ Bundle 'leafgarland/typescript-vim'
 Bundle 'nazo/pt.vim'
 Bundle 'othree/html5.vim'
 Bundle 'hail2u/vim-css3-syntax'
-Bundle 'soramugi/auto-ctags.vim'
 " Rspec
 Bundle 'tpope/vim-dispatch'
 Bundle 'thoughtbot/vim-rspec'
