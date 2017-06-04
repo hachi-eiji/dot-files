@@ -103,21 +103,11 @@ ln -s $DOT_FILE_PATH/.zshrc $ZSH_CUSTOM/my-zsh-config.zsh
 ln -s $DOT_FILE_PATH/.peco_function.zsh $HOME/.peco_function.zsh
 ```
 
-TODO: use [anyenv](https://github.com/riywo/anyenv)
-
-install rbenv
+install anyenv
 --
-* https://github.com/rbenv/rbenv#homebrew-on-mac-os-x
-* https://github.com/rbenv/ruby-build#installing-with-homebrew-for-os-x-users
 
-install pyenv
---
-* https://github.com/yyuu/pyenv#command-reference
-* https://github.com/yyuu/pyenv-virtualenv
+see [anyenv](https://github.com/riywo/anyenv)
 
-install ndenv
---
-see https://github.com/riywo/ndenv
 
 install hub
 --
