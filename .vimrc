@@ -130,6 +130,7 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'thoughtbot/vim-rspec'
 " bookmark
 Bundle 'MattesGroeger/vim-bookmarks'
+Bundle 'soramugi/auto-ctags.vim'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1

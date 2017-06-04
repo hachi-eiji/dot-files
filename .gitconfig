@@ -54,3 +54,5 @@
 	prompt = false
 [mergetool]
 	prompt = false
+[commit]
+	verbose = true
