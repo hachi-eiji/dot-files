@@ -115,9 +115,9 @@ install pyenv
 * https://github.com/yyuu/pyenv#command-reference
 * https://github.com/yyuu/pyenv-virtualenv
 
-install ndenv
+install nodenv
 --
-see https://github.com/riywo/ndenv
+https://github.com/nodenv/nodenv#homebrew-on-mac-os-x
 
 install hub
 --
