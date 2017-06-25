@@ -37,10 +37,10 @@ _cache_hosts=($( print_known_hosts ))
 source $HOME/.peco_function.zsh
 
 # nodejs setting
-export PATH="$HOME/.ndenv/bin:$PATH"
-eval "$(ndenv init - --no-rehash)"
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init - --no-rehash)"
 
-# vim config 
+# vim config
 # add .bash_profile
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 export SHELL='/usr/local/bin/zsh'
