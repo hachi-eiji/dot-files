@@ -101,3 +101,6 @@ test -e $GCP_ZSH && source $GCP_ZSH
 # The next line enables shell command completion for gcloud.
 GCP_COMP="$HOME/google-cloud-sdk/completion.zsh.inc"
 test -e $GCP_COMP && source $GCP_COMP
+
+AWS_COMPLETER="/usr/local/bin/aws_zsh_completer.sh"
+test -e $AWS_COMPLETER && source $AWS_COMPLETER
