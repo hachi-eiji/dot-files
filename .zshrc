@@ -84,6 +84,7 @@ alias tad='tmux a -d -t'
 alias tl='tmux list-sessions'
 alias ls='ls -G'
 alias grum='git fetch upstream && git rebase upstream/master'
+alias push-pr='gpsup && hub pull-request -o'
 test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
 
 # hub setting
