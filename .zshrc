@@ -36,22 +36,32 @@ _cache_hosts=($( print_known_hosts ))
 ## source peco function
 source $HOME/.peco_function.zsh
 
-export GOPATH=$HOME/.go/current
-export GOENV_ROOT=$HOME/.goenv
+# nodejs setting
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init - --no-rehash)"
 
 # vim config
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
-alias vimdiff='/Applications/MacVim.app/Contents/MacOS/vimdiff'
-
+# add .bash_profile
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 export SHELL='/usr/local/bin/zsh'
+export GOPATH=$HOME/.go/current
 # User configuration
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOROOT/bin"
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init - --no-rehash)"
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOROOT/bin
+#rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - --no-rehash)"
+eval "$(direnv hook zsh)"
+export PATH="$PATH:$HOME/.pyenv/bin"
+eval "$(pyenv init - --no-rehash)"
+eval "$(pyenv virtualenv-init -)"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export PATH="$PATH:$HOME/.phpenv/bin"
+eval "$(phpenv init - --no-rehash)"
+# https://github.com/syndbg/goenv/
+export GOENV_ROOT=$HOME/.goenv
+if which goenv > /dev/null; then eval "$(goenv init - --no-rehash)"; fi
 
+# export MANPATH="/usr/local/man:$MANPATH"
 path=(
     /opt/*/(s|)bin(N-/)
     $path
@@ -64,12 +74,17 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 # http://qiita.com/delphinus/items/b04752bb5b64e6cc4ea9
 export LESS='-g -i -M -R -W -z-4 -x4'
 
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
+alias vimdiff='/Applications/MacVim.app/Contents/MacOS/vimdiff'
 alias tmux='tmux -u'
 alias t='tmux'
 alias tad='tmux a -d -t'
 alias tl='tmux list-sessions'
 alias ls='ls -G'
 alias grum='git fetch upstream && git rebase upstream/master'
+alias push-pr='gpsup && hub pull-request -o'
 test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
 
 # hub setting
@@ -101,3 +116,6 @@ test -e $GCP_ZSH && source $GCP_ZSH
 # The next line enables shell command completion for gcloud.
 GCP_COMP="$HOME/google-cloud-sdk/completion.zsh.inc"
 test -e $GCP_COMP && source $GCP_COMP
+
+AWS_COMPLETER="/usr/local/bin/aws_zsh_completer.sh"
+test -e $AWS_COMPLETER && source $AWS_COMPLETER

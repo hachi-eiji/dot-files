@@ -113,5 +113,8 @@ function peco-ghq() {
     fi
     zle clear-screen
 }
-zle -N peco-ghq 
-bindkey '^x^g' peco-ghq 
+zle -N peco-ghq
+bindkey '^x^g' peco-ghq
+
+file=$HOME/.config/local_peco_functions.zsh
+test -e $file && source $HOME/.config/local_peco_functions.zsh
