@@ -6,6 +6,9 @@ my mac dot files
 at first 
 ```
 export DOT_FILE_PATH=""
+git config --system user.name "name"
+git config --system user.email "email"
+brew install macvim --with-override-system-vim
 ```
 
 install zsh
@@ -102,8 +105,6 @@ ln -s $DOT_FILE_PATH/hachi.zsh-theme ~/.oh-my-zsh/themes/hachi.zsh-theme
 ln -s $DOT_FILE_PATH/.zshrc $ZSH_CUSTOM/my-zsh-config.zsh
 ln -s $DOT_FILE_PATH/.peco_function.zsh $HOME/.peco_function.zsh
 ```
-
-TODO: use [anyenv](https://github.com/riywo/anyenv)
 
 install rbenv
 --
