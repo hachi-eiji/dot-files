@@ -1,6 +1,3 @@
-[user]
- name = Eiji Hachiya
- email = hachiyae@gmail.com
 [includeIf "gitdir:~/development/github.com/classi/**"]
   path = .gitconfig.local
 
