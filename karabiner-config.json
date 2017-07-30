@@ -1,8 +1,8 @@
 {
-  "title": "japanese_eisuu_to_eisuu",
+  "title": "japanese_eisuu_to_kana",
   "rules": [
     {
-      "description": "japanese_eisuu_to_eisuu",
+      "description": "japanese_eisuu_to_kana",
       "manipulators": [
         {
           "type": "basic",
