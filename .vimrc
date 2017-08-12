@@ -249,5 +249,9 @@ let g:rspec_runner = "os_x_iterm2"
 nnoremap <C-]> g<C-]>
 let vim_tags_ctags_binary= "/Applications/MacVim.app/Contents/MacOS/ctags"
 
+" typescriptのimport時にsingleで
+let g:tsuquyomi_single_quote_import=1
+noremap <F4> :TsuImport<CR>
+
 filetype plugin indent on
 set imdisable
