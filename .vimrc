@@ -253,7 +253,7 @@ let vim_tags_ctags_binary= "/Applications/MacVim.app/Contents/MacOS/ctags"
 " typescriptのimport時にsingleで
 let g:tsuquyomi_single_quote_import=1
 au FileType typescript nmap <Leader>b <Plug>(TsuquyomiGoBack)
-au FileType typescript nmap <Leader>r <Plug>(TsuquyomiReferences)
+au FileType typescript nmap <F7> <Plug>(TsuquyomiReferences)
 au FileType typescript noremap <F4> :TsuImport<CR>
 
 filetype plugin indent on
