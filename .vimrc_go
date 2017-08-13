@@ -1,5 +1,5 @@
 Bundle 'fatih/vim-go'
-au BufNewFile,BufRead *.go set noexpandtab tabstop=8 shiftwidth=8
+au BufNewFile,BufRead *.go setlocal noexpandtab tabstop=8 shiftwidth=8
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
