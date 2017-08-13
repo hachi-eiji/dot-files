@@ -206,6 +206,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v([\/]\.(git|hg|svn)$|[\/]bundle$|[\/]node_modules$)',
   \ 'file': '\v\.(exe|so|dll|gif|png|jpeg|jpg|pdf|mp3|cache)$'
   \ }
+let g:ctrlp_clear_cache_on_exit = 0
 
 " memo
 let g:memolist_memo_suffix = "md"
