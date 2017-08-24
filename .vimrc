@@ -131,6 +131,7 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'thoughtbot/vim-rspec'
 " bookmark
 Bundle 'MattesGroeger/vim-bookmarks'
+Bundle 'burnettk/vim-angular'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
