@@ -81,20 +81,15 @@ highlight CursorLine ctermbg=black guibg=black
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'hachi-eiji/jellybeans.vim'
-Bundle 'w0ng/vim-hybrid'
 Bundle 'gmarik/vundle'
 Bundle 'kana/vim-fakeclip'
-Bundle 'mru.vim'
 " markdown
 Bundle 'tpope/vim-markdown'
 Bundle 't9md/vim-choosewin'
 Bundle 'itchyny/lightline.vim'
-Bundle 'Shougo/neomru.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'rizzatti/dash.vim'
 Bundle 'tomasr/molokai'
-Bundle 'vim-scripts/twilight'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'kannokanno/previm'
 Bundle 'editorconfig/editorconfig-vim'
 " 補完
@@ -151,10 +146,6 @@ endif
 
 if filereadable(expand('~/.vimrc_go'))
   source ~/.vimrc_go
-endif
-
-if filereadable(expand('~/.vimrc_neocomplete'))
-  source ~/.vimrc_neocomplete
 endif
 
 " split window right side
