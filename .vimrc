@@ -104,6 +104,8 @@ Bundle 'jiangmiao/auto-pairs'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/ruby-matchit'
 Bundle 'ctrlpvim/ctrlp.vim'
+" ctrlp で日本語検索
+Bundle 'haya14busa/vim-migemo'
 Bundle 'nixprime/cpsm'
 Bundle 'glidenote/memolist.vim'
 Bundle 'tomtom/tcomment_vim'
@@ -199,6 +201,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|gif|png|jpeg|jpg|pdf|mp3|cache)$'
   \ }
 let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_use_migemo = 1
 
 " memo
 let g:memolist_memo_suffix = "md"
