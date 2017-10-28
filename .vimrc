@@ -130,7 +130,7 @@ Bundle 'thoughtbot/vim-rspec'
 " bookmark
 Bundle 'MattesGroeger/vim-bookmarks'
 Bundle 'burnettk/vim-angular'
-Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Yggdroot/indentLine'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -253,10 +253,6 @@ let g:tsuquyomi_disable_default_mappings = 1
 au FileType typescript nmap <Leader>b <Plug>(TsuquyomiGoBack)
 au FileType typescript nmap <F7> <Plug>(TsuquyomiReferences)
 au FileType typescript noremap <F4> :TsuImport<CR>
-
-" nathanaelkane/vim-indent-guides
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 3
 
 filetype plugin indent on
 set imdisable
