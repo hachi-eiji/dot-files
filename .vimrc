@@ -131,6 +131,7 @@ Bundle 'thoughtbot/vim-rspec'
 Bundle 'MattesGroeger/vim-bookmarks'
 Bundle 'burnettk/vim-angular'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'hotwatermorning/auto-git-diff'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
