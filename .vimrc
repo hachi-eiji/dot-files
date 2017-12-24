@@ -1,11 +1,11 @@
 filetype off                   " required!
-
 let mapleader = "\<Space>"
 set number
 syntax on
 set t_Co=256
 set antialias
 set ambiwidth=double
+set termguicolors
 
 """ ignored files in vimgrep
 let s:ignore_list  = ',.git/**,.svn/**,obj/**'
