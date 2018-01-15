@@ -65,15 +65,6 @@ set ttyfast
 " オムニ補完のプレビューを無効にする
 set completeopt=menuone
 
-" カーソル行をハイライト
-set cursorline
-" カレントウィンドウにのみ罫線を引く
-augroup cch
-  autocmd! cch
-  autocmd WinLeave * set nocursorline
-  autocmd WinEnter,BufRead * set cursorline
-augroup END
-
 hi clear CursorLine
 highlight CursorLine ctermbg=black guibg=black
 
