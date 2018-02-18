@@ -217,6 +217,13 @@ let g:vim_json_syntax_conceal=0
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_statusline_format = ['E:%d', 'W:%d', '']
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'ruby': ['rubocop'],
+\}
+" Enable completion where available.
+let g:ale_completion_enabled = 1
+
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
