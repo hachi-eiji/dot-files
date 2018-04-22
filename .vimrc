@@ -89,8 +89,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-rhubarb'
-Bundle 'Shougo/neosnippet'
-Bundle 'hachi-eiji/neosnippet-snippets'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/ruby-matchit'
@@ -123,6 +121,7 @@ Bundle 'burnettk/vim-angular'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'hotwatermorning/auto-git-diff'
 Bundle 'k0kubun/vim-open-github'
+Bundle 'KeyboardFire/vim-minisnip'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -166,19 +165,6 @@ colorscheme jellybeans
 au BufNewFile,BufRead *.md :set filetype=markdown
 au BufRead,BufNewFile *.rb let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '|':'|'}
 au BufNewFile,BufRead *.ts :set filetype=typescript
-
-" neosnippet key mapping
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-
-" SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
 
 " For conceal markers.
 if has('conceal')
