@@ -11,17 +11,11 @@ Bundle 'mxw/vim-jsx'
 au BufRead,BufNewFile *.jsx setlocal filetype=javascript.jsx
 
 let g:jscomplete_use = ['dom', 'moz']
-" 日本語入力の時にneocompleteを抑制
-let g:neocomplete#lock_iminsert=1
 
 augroup js
   autocmd!
 augroup END
 autocmd js FileType javascript setlocal dictionary+=$HOME/.vim/bundle/vim-node-dict/dict/node.dict
 autocmd js FileType javascript setlocal omnifunc=nodejscomplete#CompleteJS
-if !exists('g:neocomplcache_omni_functions')
-    let g:neocomplcache_omni_functions = {}
-endif
-let g:neocomplcache_omni_functions.javascript = 'nodejscomplete#CompleteJS'
 
 let g:node_usejscomplete = 1
