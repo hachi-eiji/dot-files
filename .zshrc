@@ -70,7 +70,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 # http://qiita.com/delphinus/items/b04752bb5b64e6cc4ea9
 export LESS='-g -i -M -R -W -z-4 -x4'
 # rubocop
-export RUBOCOP_OPTS='-D -S -E -P'
+export RUBOCOP_OPTS='-D -S -E'
 
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
