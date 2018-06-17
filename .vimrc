@@ -19,6 +19,7 @@ if exists('+wildignore')
   autocmd QuickFixCmdPre  * execute 'setlocal wildignore+=' . s:ignore_list
   autocmd QuickFixCmdPost * execute 'setlocal wildignore-=' . s:ignore_list
 endif
+autocmd QuickFixCmdPost *grep* cwindow
 
 " tab setting
 set expandtab
