@@ -144,8 +144,8 @@ if filereadable(expand('~/.vimrc_go'))
   source ~/.vimrc_go
 endif
 
-map <C-n> :cnext<CR>
-map <C-m> :cprevious<CR>
+nnoremap <leader>n :cnext<CR>
+nnoremap <leader>p :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
 
 " split window right side
