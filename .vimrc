@@ -88,7 +88,6 @@ Bundle 'majutsushi/tagbar'
 " git
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-rhubarb'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'vim-ruby/vim-ruby'
