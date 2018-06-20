@@ -359,11 +359,8 @@ Style/Semicolon:
   Exclude:
     - "spec/**/*_spec.rb"
 
-# * 式展開したい場合に書き換えるのが面倒
-# * 文章ではダブルクォートよりもシングルクォートの方が頻出する
-# ことから EnforcedStyle: double_quotes 推奨
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
 
 # 式展開中でもダブルクォートを使う
 # 普段の文字列リテラルがダブルクォートなので使い分けるのが面倒
