@@ -362,8 +362,6 @@ Style/Semicolon:
 Style/StringLiterals:
   EnforcedStyle: single_quotes
 
-# 式展開中でもダブルクォートを使う
-# 普段の文字列リテラルがダブルクォートなので使い分けるのが面倒
 Style/StringLiteralsInInterpolation:
   EnforcedStyle: single_quotes
 
