@@ -145,7 +145,7 @@ endif
 
 nnoremap <leader>n :cnext<CR>
 nnoremap <leader>p :cprevious<CR>
-nnoremap <leader>a :cclose<CR>
+nnoremap <leader>c :cclose<CR>
 
 " split window right side
 let g:netrw_altv = 1
