@@ -80,7 +80,7 @@ Bundle 'itchyny/lightline.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'rizzatti/dash.vim'
 Bundle 'tomasr/molokai'
-Bundle 'kannokanno/previm'
+Bundle 'previm/previm'
 Bundle 'editorconfig/editorconfig-vim'
 " 補完
 Bundle 'w0rp/ale'
