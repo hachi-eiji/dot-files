@@ -84,6 +84,7 @@ Bundle 'previm/previm'
 Bundle 'editorconfig/editorconfig-vim'
 " 補完
 Bundle 'w0rp/ale'
+Bundle 'maximbaz/lightline-ale'
 Bundle 'majutsushi/tagbar'
 " git
 Bundle 'tpope/vim-fugitive'
@@ -201,7 +202,6 @@ let g:vim_json_syntax_conceal=0
 " w0rp/ale
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
-let g:ale_statusline_format = ['E:%d', 'W:%d', '']
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'ruby': ['rubocop'],
