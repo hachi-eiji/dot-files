@@ -5,6 +5,7 @@
   excludesfile = ~/.gitignore_global
   autocrlf = input
 	pager = less -R -F -X -N
+  ignorecase = false
 [color]
   diff = auto
   status = auto
