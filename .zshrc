@@ -72,9 +72,11 @@ export LESS='-g -i -M -R -W -N -z-4 -x4'
 # rubocop
 export RUBOCOP_OPTS='-D -S -E'
 
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
+MAC_VIM='/Applications/MacVim.app/Contents/MacOS/Vim'
+if [ -e "$MAC_VIM" ]; then
+  alias vi="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim \"\$@\""
+  alias vim="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim \"\$@\""
+fi
 alias tmux='tmux -u'
 alias t='tmux'
 alias tad='tmux a -d -t'
