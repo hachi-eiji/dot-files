@@ -40,9 +40,15 @@ source $HOME/.peco_function.zsh
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init - --no-rehash)"
 
+MAC_VIM='/Applications/MacVim.app/Contents/MacOS/Vim'
+if [ -e "$MAC_VIM" ]; then
+  alias vi="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim \"\$@\""
+  alias vim="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim \"\$@\""
+fi
+
 # vim config
 # add .bash_profile
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+export EDITOR=vim
 export SHELL='/usr/local/bin/zsh'
 export GOPATH=$HOME/.go/current
 # User configuration
@@ -72,11 +78,6 @@ export LESS='-g -i -M -R -W -N -z-4 -x4'
 # rubocop
 export RUBOCOP_OPTS='-D -S -E'
 
-MAC_VIM='/Applications/MacVim.app/Contents/MacOS/Vim'
-if [ -e "$MAC_VIM" ]; then
-  alias vi="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim \"\$@\""
-  alias vim="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim \"\$@\""
-fi
 alias tmux='tmux -u'
 alias t='tmux'
 alias tad='tmux a -d -t'
