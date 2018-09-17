@@ -234,7 +234,7 @@ let g:rspec_runner = "os_x_iterm2"
 
 " tagsジャンプの時に複数ある時は一覧表示
 nnoremap <C-]> g<C-]>
-let vim_tags_ctags_binary= "/Applications/MacVim.app/Contents/MacOS/ctags"
+let vim_tags_ctags_binary= "/usr/local/bin/ctags"
 
 " typescriptのimport時にsingleで
 let g:tsuquyomi_single_quote_import=1
