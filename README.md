@@ -48,10 +48,8 @@ install ctag
 --
 
 ```
-# install ctags
-brew install ctags
-# remove original ctags
-sudo mv /usr/bin/ctags /usr/bin/ctags.org
+brew tap universal-ctags/universal-ctags
+brew install --HEAD universal-ctags
 ```
 
 install vim vundle
