@@ -15,7 +15,8 @@ brew install cmake \
   direnv \
   rbenv ruby-build \
   pyenv pyenv-virtualenv \
-  nodenv
+  nodenv \
+  boost
 
 rbenv init
 nodenv init
@@ -26,3 +27,5 @@ brew install universal-ctags
 brew tap peco/peco
 brew install peco
 ln -s $DOTFILE_DIR/.config/peco $HOME/.config
+
+brew link icu4c
