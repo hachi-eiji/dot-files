@@ -16,7 +16,8 @@ brew install cmake \
   rbenv ruby-build \
   pyenv pyenv-virtualenv \
   nodenv \
-  boost
+  boost \
+  pt
 
 rbenv init
 nodenv init
