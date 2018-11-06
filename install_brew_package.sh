@@ -6,30 +6,24 @@ mkdir $HOME/.config
 
 brew doctor
 
-brew install tmux reattach-to-user-namespace
+brew install cmake \
+  tmux reattach-to-user-namespace \
+  mosh \
+  tig \
+  hub \
+  editorconfig \
+  direnv \
+  rbenv ruby-build \
+  pyenv pyenv-virtualenv \
+  nodenv
+
+rbenv init
+pyenv init
+nodenv init
 
 brew tap universal-ctags/universal-ctags
 brew install universal-ctags
 
-brew install mosh
-
-brew install tig
-
 brew tap peco/peco
 brew install peco
 ln -s $DOTFILE_DIR/.config/peco $HOME/.config
-
-brew install hub
-
-brew install editorconfig
-
-brew install direnv
-
-brew install rbenv ruby-build
-rbenv init
-
-brew install pyenv pyenv-virtualenv
-pyenv init
-
-brew install nodenv
-nodenv init
