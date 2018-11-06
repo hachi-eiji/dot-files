@@ -14,7 +14,6 @@ brew install cmake \
   editorconfig \
   direnv \
   rbenv ruby-build \
-  pyenv pyenv-virtualenv \
   nodenv \
   boost \
   pt
