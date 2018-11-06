@@ -18,7 +18,6 @@ brew install cmake \
   nodenv
 
 rbenv init
-pyenv init
 nodenv init
 
 brew tap universal-ctags/universal-ctags

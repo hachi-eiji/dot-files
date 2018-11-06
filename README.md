@@ -72,3 +72,11 @@ ln -s $DOT_FILE_PATH/hachi.zsh-theme ~/.oh-my-zsh/themes/hachi.zsh-theme
 ln -s $DOT_FILE_PATH/.zshrc $ZSH_CUSTOM/my-zsh-config.zsh
 ln -s $DOT_FILE_PATH/.peco_function.zsh $HOME/.peco_function.zsh
 ```
+
+install pyenv(if failed)
+---
+```
+CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include" \
+LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib" \
+PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.7-dev
+```
