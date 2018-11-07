@@ -207,6 +207,7 @@ let g:ale_linters = {
 \   'javascript': ['eslint', 'prettier'],
 \   'css': ['stylelint', 'prettier'],
 \   'ruby': ['rubocop'],
+\   'typescript': ['tslint', 'prettier'],
 \}
 " Enable completion where available.
 let g:ale_completion_enabled = 1
