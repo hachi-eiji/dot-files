@@ -204,7 +204,8 @@ let g:ale_ruby_rubocop_executable='bundle'
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_linters = {
-\   'javascript': ['eslint'],
+\   'javascript': ['eslint', 'prettier'],
+\   'css': ['stylelint', 'prettier'],
 \   'ruby': ['rubocop'],
 \}
 " Enable completion where available.
