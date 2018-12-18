@@ -19,7 +19,8 @@ brew install zsh git \
   pyenv pyenv-virtualenv \
   boost \
   pt \
-  icu4c
+  icu4c \
+  ghq
 
 rbenv init
 nodenv init
