@@ -20,7 +20,9 @@ brew install zsh git \
   boost \
   pt \
   icu4c \
-  ghq
+  ghq \
+  jq \
+  awscli
 
 rbenv init
 nodenv init
