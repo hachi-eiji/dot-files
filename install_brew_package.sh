@@ -17,7 +17,8 @@ brew install git \
   rbenv ruby-build \
   nodenv \
   boost \
-  pt
+  pt \
+  icu4c
 
 rbenv init
 nodenv init
