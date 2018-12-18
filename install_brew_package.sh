@@ -6,7 +6,7 @@ mkdir $HOME/.config
 
 brew doctor
 
-brew install git \
+brew install zsh git \
   cmake \
   tmux reattach-to-user-namespace \
   mosh \
