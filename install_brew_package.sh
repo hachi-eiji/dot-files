@@ -6,7 +6,8 @@ mkdir $HOME/.config
 
 brew doctor
 
-brew install cmake \
+brew install git \
+  cmake \
   tmux reattach-to-user-namespace \
   mosh \
   tig \
