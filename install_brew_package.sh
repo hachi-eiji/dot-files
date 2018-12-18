@@ -1,5 +1,5 @@
 echo 'install homebrew'
-DOTFILE_DIR="$HOME/github.com/hachi-eiji/dot-files"
+DOTFILE_DIR="$HOME/development/github.com/hachi-eiji/dot-files"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 mkdir $HOME/.config
