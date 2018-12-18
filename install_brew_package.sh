@@ -16,6 +16,7 @@ brew install zsh git \
   direnv \
   rbenv ruby-build \
   nodenv \
+  pyenv pyenv-virtualenv \
   boost \
   pt \
   icu4c
