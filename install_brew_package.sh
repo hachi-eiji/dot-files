@@ -1,12 +1,13 @@
 echo 'install homebrew'
-DOTFILE_DIR="$HOME/github.com/hachi-eiji/dot-files"
+DOTFILE_DIR="$HOME/development/github.com/hachi-eiji/dot-files"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 mkdir $HOME/.config
 
 brew doctor
-
-brew install cmake \
+brew install macvim --with-override-system-vim
+brew install zsh git \
+  cmake \
   tmux reattach-to-user-namespace \
   mosh \
   tig \
@@ -15,8 +16,13 @@ brew install cmake \
   direnv \
   rbenv ruby-build \
   nodenv \
+  pyenv pyenv-virtualenv \
   boost \
-  pt
+  pt \
+  icu4c \
+  ghq \
+  jq \
+  awscli
 
 rbenv init
 nodenv init
@@ -27,5 +33,3 @@ brew install universal-ctags
 brew tap peco/peco
 brew install peco
 ln -s $DOTFILE_DIR/.config/peco $HOME/.config
-
-brew link icu4c

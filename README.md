@@ -55,7 +55,7 @@ install Ricky
 
 ```
 $ brew tap sanemat/font
-$ brew reinstall --powerline --vim-powerline ricty
+$ brew install --powerline --vim-powerline ricty
 $ cp -f /usr/local/Cellar/ricty/4.0.1/share/fonts/Ricty*.ttf ~/Library/Fonts/
 $ fc-cache -vf
 ```
