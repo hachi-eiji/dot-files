@@ -5,7 +5,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 mkdir $HOME/.config
 
 brew doctor
-brew install macvim --with-override-system-vim
 brew install zsh git \
   cmake \
   tmux reattach-to-user-namespace \
@@ -18,11 +17,14 @@ brew install zsh git \
   nodenv \
   pyenv pyenv-virtualenv \
   boost \
-  pt \
   icu4c \
   ghq \
   jq \
-  awscli
+  awscli \
+  goenv \
+  icu4c \
+  pyenv pyenv-virtualenv \
+  pt
 
 rbenv init
 nodenv init
