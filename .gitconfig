@@ -33,7 +33,6 @@
   fetch-pulls = fetch origin +refs/pull/*:refs/remotes/pull/*
 [ghq]
   root = ~/development
-  root = ~/.go/current/src
 [rebase]
   autostash=true
 [credential]

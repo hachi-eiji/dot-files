@@ -8,7 +8,6 @@ at first
 export DOT_FILE_PATH=""
 git config --system user.name "name"
 git config --system user.email "email"
-brew install macvim --with-override-system-vim
 ```
 
 install zsh
@@ -52,13 +51,7 @@ ln -s <repository>/.vimrc.lightline ~/.vimrc.lightline
 
 install Ricky
 --
-
-```
-$ brew tap sanemat/font
-$ brew reinstall --powerline --vim-powerline ricty
-$ cp -f /usr/local/Cellar/ricty/4.0.1/share/fonts/Ricty*.ttf ~/Library/Fonts/
-$ fc-cache -vf
-```
+Copy from my Dropbox
 
 install oh-my-zsh
 --
@@ -73,14 +66,13 @@ ln -s $DOT_FILE_PATH/.zshrc $ZSH_CUSTOM/my-zsh-config.zsh
 ln -s $DOT_FILE_PATH/.peco_function.zsh $HOME/.peco_function.zsh
 ```
 
-install pyenv
+install python
 ---
 
 ```
 CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include" \
 LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib" \
 PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.7-dev
-pyenv-virtualenv
 ```
 
 install phpenv

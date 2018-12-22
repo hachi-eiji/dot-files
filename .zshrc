@@ -63,6 +63,7 @@ eval "$(pyenv virtualenv-init -)"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PATH="$PATH:$HOME/.phpenv/bin"
 eval "$(phpenv init - --no-rehash)"
+eval "$(goenv init - --no-rehash)"
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(
     /opt/*/(s|)bin(N-/)

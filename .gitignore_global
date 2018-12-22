@@ -5,3 +5,4 @@
 railways.cache
 tags
 .envrc
+*.orig
