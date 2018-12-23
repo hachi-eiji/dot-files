@@ -1,0 +1,11 @@
+memodir = "/Users/hachi/memo"
+editor = "/Applications/MacVim.app/Contents/MacOS/Vim"
+column = 30
+width = 0
+selectcmd = "peco"
+grepcmd = "pt ${PATTERN} ${FILES}"
+memotemplate = ""
+assetsdir = "."
+pluginsdir = "/Users/hachi/.config/memo/plugins"
+templatedirfile = ""
+templatebodyfile = ""
