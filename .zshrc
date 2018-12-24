@@ -44,7 +44,7 @@ MAC_VIM='/Applications/MacVim.app/Contents/MacOS/Vim'
 if [ -e "$MAC_VIM" ]; then
   alias vi="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim \"\$@\""
   alias vim="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim \"\$@\""
-  export EDITOR="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim \"\$@\""
+  export EDITOR="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim"
 else
   export EDITOR=vim
 fi
