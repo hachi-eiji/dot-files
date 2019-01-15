@@ -5,5 +5,6 @@
 railways.cache
 tags
 .envrc
+.env
 *.orig
 vendor/bundle
