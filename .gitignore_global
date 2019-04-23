@@ -3,6 +3,7 @@
 *.iml
 .idea/
 railways.cache
+.rakeTasks
 tags
 .envrc
 .env
