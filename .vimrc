@@ -186,6 +186,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_use_migemo = 1
+let g:ctrlp_show_hidden = 1
 
 " memo
 let g:memolist_memo_suffix = "md"
