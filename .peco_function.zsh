@@ -21,7 +21,6 @@ function peco-cdr () {
     BUFFER="cd ${selected_dir}"
     zle accept-line
   fi
-  zle clear-screen
 }
 zle -N peco-cdr
 bindkey '^x^@' peco-cdr
@@ -36,7 +35,6 @@ function peco-git-checkout-b(){
     BUFFER="$git checkout -t ${selected_branch}"
     zle accept-line
   fi
-  zle clear-screen
 }
 zle -N peco-git-checkout-b
 bindkey '^g^b' peco-git-checkout-b
@@ -49,7 +47,6 @@ function peco-git-vim (){
     BUFFER="vim $selected_file"
     zle accept-line
   fi
-  zle clear-screen
 }
 zle -N peco-git-vim
 bindkey '^x^f' peco-git-vim
@@ -65,7 +62,6 @@ function peco-git-recent-branches () {
     BUFFER="$git checkout ${selected_branch}"
     zle accept-line
   fi
-  zle clear-screen
 }
 zle -N peco-git-recent-branches
 bindkey '^x^b' peco-git-recent-branches
@@ -80,7 +76,6 @@ function peco-git-recent-all-branches () {
     BUFFER="$git checkout -t ${selected_branch}"
     zle accept-line
   fi
-  zle clear-screen
 }
 zle -N peco-git-recent-all-branches
 bindkey '^xb' peco-git-recent-all-branches
@@ -93,7 +88,6 @@ function peco-ssh (){
     BUFFER="ssh $selected_ssh"
     zle accept-line
   fi
-  zle clear-screen
 }
 zle -N peco-ssh
 bindkey '^x^s' peco-ssh
@@ -105,7 +99,6 @@ function peco-mosh (){
     BUFFER="mosh $selected_ssh"
     zle accept-line
   fi
-  zle clear-screen
 }
 zle -N peco-mosh
 bindkey '^x^m' peco-mosh
@@ -117,7 +110,6 @@ function peco-ghq() {
     BUFFER="cd ${selected_dir}"
     zle accept-line
   fi
-  zle clear-screen
 }
 zle -N peco-ghq
 bindkey '^x^g' peco-ghq
