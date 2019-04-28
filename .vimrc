@@ -89,7 +89,7 @@ Bundle 'majutsushi/tagbar'
 " git
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'jiangmiao/auto-pairs'
+Bundle 'cohama/lexima.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/ruby-matchit'
 Bundle 'ctrlpvim/ctrlp.vim'
@@ -253,9 +253,6 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=darkgrey ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkgrey
-
-" auto-pairs
-let g:AutoPairsMapSpace = 0
 
 filetype plugin indent on
 set imdisable
