@@ -9,3 +9,4 @@ tags
 .env
 *.orig
 vendor/bundle
+node_modules
