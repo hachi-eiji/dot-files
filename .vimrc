@@ -161,6 +161,9 @@ nnoremap <silent> <C-L> :noh<C-L><CR>
 let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
 
 colorscheme jellybeans
+highlight! Normal ctermbg=NONE guibg=NONE
+highlight! NonText ctermbg=NONE guibg=NONE
+highlight! LineNr ctermbg=NONE guibg=NONE
 
 au BufNewFile,BufRead *.md :set filetype=markdown
 au BufRead,BufNewFile *.rb let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '|':'|'}
