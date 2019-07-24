@@ -1,4 +1,4 @@
-memodir = "/Users/hachi/memo"
+memodir = "$HOME/memo"
 editor = "/Applications/MacVim.app/Contents/MacOS/Vim"
 column = 30
 width = 0
