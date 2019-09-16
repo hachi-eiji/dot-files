@@ -122,6 +122,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'hotwatermorning/auto-git-diff'
 Bundle 'k0kubun/vim-open-github'
 Bundle 'KeyboardFire/vim-minisnip'
+Bundle 'prettier/vim-prettier'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
