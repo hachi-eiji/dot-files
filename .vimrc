@@ -88,7 +88,6 @@ Bundle 'maximbaz/lightline-ale'
 Bundle 'majutsushi/tagbar'
 " git
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rhubarb'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'cohama/lexima.vim'
 Bundle 'vim-ruby/vim-ruby'
