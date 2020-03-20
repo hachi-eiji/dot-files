@@ -82,10 +82,6 @@ Bundle 'rizzatti/dash.vim'
 Bundle 'tomasr/molokai'
 Bundle 'previm/previm'
 Bundle 'editorconfig/editorconfig-vim'
-" 補完
-Bundle 'w0rp/ale'
-Bundle 'maximbaz/lightline-ale'
-Bundle 'majutsushi/tagbar'
 " git
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rhubarb'
@@ -109,7 +105,6 @@ Bundle 'kshenoy/vim-signature'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mattn/emmet-vim'
 Bundle 'leafgarland/typescript-vim'
-Bundle 'Quramy/tsuquyomi'
 Bundle 'nazo/pt.vim'
 Bundle 'othree/html5.vim'
 Bundle 'hail2u/vim-css3-syntax'
@@ -124,6 +119,13 @@ Bundle 'hotwatermorning/auto-git-diff'
 Bundle 'k0kubun/vim-open-github'
 Bundle 'KeyboardFire/vim-minisnip'
 Bundle 'prettier/vim-prettier'
+" vim-lsp
+Bundle 'prabirshrestha/async.vim'
+Bundle 'prabirshrestha/vim-lsp'
+Bundle 'mattn/vim-lsp-settings'
+Bundle 'prabirshrestha/asyncomplete.vim'
+Bundle 'prabirshrestha/asyncomplete-lsp.vim'
+Bundle 'w0rp/ale'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -135,14 +137,6 @@ nmap ; <Plug>(choosewin)
 if filereadable(expand('~/.vimrc.lightline'))
   set laststatus=2
   source ~/.vimrc.lightline
-endif
-
-if filereadable(expand('~/.vimrc_js'))
-  source ~/.vimrc_js
-endif
-
-if filereadable(expand('~/.vimrc_go'))
-  source ~/.vimrc_go
 endif
 
 nnoremap <leader>n :cnext<CR>
@@ -244,13 +238,6 @@ let g:rspec_runner = "os_x_iterm2"
 nnoremap <C-]> g<C-]>
 let vim_tags_ctags_binary= "/usr/local/bin/ctags"
 
-" typescriptのimport時にsingleで
-let g:tsuquyomi_single_quote_import=1
-let g:tsuquyomi_disable_default_mappings = 1
-au FileType typescript nmap <Leader>b <Plug>(TsuquyomiGoBack)
-au FileType typescript nmap <F7> <Plug>(TsuquyomiReferences)
-au FileType typescript noremap <F4> :TsuImport<CR>
-
 " nathanaelkane/vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 3
@@ -258,6 +245,10 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=darkgrey ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkgrey
+
+" lsp エラー検知
+let g:lsp_signs_enabled = 1
+let g:lsp_diagnostics_echo_cursor = 1
 
 filetype plugin indent on
 set imdisable
