@@ -84,7 +84,6 @@ Bundle 'previm/previm'
 Bundle 'editorconfig/editorconfig-vim'
 " git
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rhubarb'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'cohama/lexima.vim'
 Bundle 'vim-ruby/vim-ruby'
