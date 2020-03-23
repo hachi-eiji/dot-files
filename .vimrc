@@ -126,6 +126,7 @@ Bundle 'mattn/vim-lsp-settings'
 Bundle 'prabirshrestha/asyncomplete.vim'
 Bundle 'prabirshrestha/asyncomplete-lsp.vim'
 Bundle 'w0rp/ale'
+Bundle 'fatih/vim-go'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
