@@ -91,7 +91,6 @@ Bundle 'vim-scripts/ruby-matchit'
 Bundle 'ctrlpvim/ctrlp.vim'
 " ctrlp で日本語検索
 Bundle 'haya14busa/vim-migemo'
-Bundle 'nixprime/cpsm'
 Bundle 'glidenote/memolist.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'Chiel92/vim-autoformat'
@@ -176,7 +175,6 @@ set listchars=tab:>.,trail:.,nbsp:%
 " ctrp
 nnoremap <silent> <C-@> :let g:cpsm_match_empty_query = 0<CR>:CtrlPMRU<CR>
 nnoremap <silent> <C-p> :let g:cpsm_match_empty_query = 1<CR>:CtrlP<CR>
-let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v([\/]\.(git|hg|svn)$|[\/]bundle$|[\/]node_modules$)',
