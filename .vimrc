@@ -124,8 +124,8 @@ Bundle 'mattn/vim-lsp-settings'
 Bundle 'prabirshrestha/asyncomplete.vim'
 Bundle 'prabirshrestha/asyncomplete-lsp.vim'
 Bundle 'w0rp/ale'
-Bundle 'fatih/vim-go'
 Bundle 'majutsushi/tagbar'
+Bundle 'mattn/vim-goimports'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -207,6 +207,7 @@ let g:ale_linters = {
 \   'css': ['stylelint', 'prettier'],
 \   'ruby': ['rubocop'],
 \   'typescript': ['tslint', 'prettier'],
+\    'go': ['gopls'],
 \}
 " Enable completion where available.
 let g:ale_completion_enabled = 1
