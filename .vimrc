@@ -205,7 +205,7 @@ let g:ale_lint_on_enter = 0
 let g:ale_linters = {
 \   'javascript': ['eslint', 'prettier'],
 \   'css': ['stylelint', 'prettier'],
-\   'ruby': ['rubocop'],
+\   'ruby': ['solargraph', 'rubocop'],
 \   'typescript': ['tslint', 'prettier'],
 \    'go': ['gopls'],
 \}
