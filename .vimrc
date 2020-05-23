@@ -111,7 +111,6 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'thoughtbot/vim-rspec'
 " bookmark
 Bundle 'MattesGroeger/vim-bookmarks'
-Bundle 'burnettk/vim-angular'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'hotwatermorning/auto-git-diff'
 Bundle 'k0kubun/vim-open-github'
