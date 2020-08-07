@@ -102,7 +102,6 @@ Bundle 'kshenoy/vim-signature'
 "末尾の全角と半角の空白文字を赤くハイライト
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mattn/emmet-vim'
-Bundle 'leafgarland/typescript-vim'
 Bundle 'nazo/pt.vim'
 Bundle 'othree/html5.vim'
 Bundle 'hail2u/vim-css3-syntax'
@@ -122,7 +121,6 @@ Bundle 'prabirshrestha/vim-lsp'
 Bundle 'mattn/vim-lsp-settings'
 Bundle 'prabirshrestha/asyncomplete.vim'
 Bundle 'prabirshrestha/asyncomplete-lsp.vim'
-Bundle 'w0rp/ale'
 Bundle 'majutsushi/tagbar'
 Bundle 'mattn/vim-goimports'
 
@@ -196,20 +194,6 @@ nmap <silent> <leader>d <Plug>DashSearch
 
 set conceallevel=0
 let g:vim_json_syntax_conceal=0
-
-" w0rp/ale
-let g:ale_ruby_rubocop_executable='bundle'
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_enter = 0
-let g:ale_linters = {
-\   'javascript': ['eslint', 'prettier'],
-\   'css': ['stylelint', 'prettier'],
-\   'ruby': ['solargraph', 'rubocop'],
-\   'typescript': ['tslint', 'prettier'],
-\    'go': ['gopls'],
-\}
-" Enable completion where available.
-let g:ale_completion_enabled = 1
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
