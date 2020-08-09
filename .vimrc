@@ -103,8 +103,6 @@ Bundle 'kshenoy/vim-signature'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mattn/emmet-vim'
 Bundle 'nazo/pt.vim'
-Bundle 'othree/html5.vim'
-Bundle 'hail2u/vim-css3-syntax'
 " Rspec
 Bundle 'tpope/vim-dispatch'
 Bundle 'thoughtbot/vim-rspec'
