@@ -121,6 +121,7 @@ Bundle 'prabirshrestha/asyncomplete.vim'
 Bundle 'prabirshrestha/asyncomplete-lsp.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'mattn/vim-goimports'
+Bundle 'Quramy/tsuquyomi'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
