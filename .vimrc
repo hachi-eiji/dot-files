@@ -122,6 +122,7 @@ Bundle 'prabirshrestha/asyncomplete-lsp.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'mattn/vim-goimports'
 Bundle 'Quramy/tsuquyomi'
+Bundle 'mattn/ctrlp-matchfuzzy'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -231,6 +232,8 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkg
 " lsp エラー検知
 let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
+
+let g:ctrlp_match_func = {'match': 'ctrlp_matchfuzzy#matcher'}
 
 filetype plugin indent on
 set imdisable
