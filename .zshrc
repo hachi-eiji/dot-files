@@ -70,9 +70,6 @@ path=(
     $path
 )
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-export _JAVA_OPTIONS="-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8"
 # http://qiita.com/delphinus/items/b04752bb5b64e6cc4ea9
 export LESS='-g -i -M -R -W -N -z-4 -x4'
 # rubocop
