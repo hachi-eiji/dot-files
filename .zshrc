@@ -57,10 +57,6 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOR
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
 eval "$(direnv hook zsh)"
-export PATH="$PATH:$HOME/.pyenv/bin"
-eval "$(pyenv init - --no-rehash)"
-eval "$(pyenv virtualenv-init -)"
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PATH="$PATH:$HOME/.phpenv/bin"
 eval "$(phpenv init - --no-rehash)"
 eval "$(goenv init - --no-rehash)"
