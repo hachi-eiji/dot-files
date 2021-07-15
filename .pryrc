@@ -5,6 +5,6 @@ if defined?(PryByebug)
   Pry.commands.alias_command 'c', 'continue'
   # Hit Enter to repeat last command
   Pry::Commands.command /^$/, "repeat last command" do
-    _pry_.run_command Pry.history.to_a.last
+    pry_instance.run_command Pry.history.to_a.last
   end
 end
