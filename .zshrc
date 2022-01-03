@@ -49,7 +49,7 @@ else
   export EDITOR=vim
 fi
 
-export SHELL='/usr/local/bin/zsh'
+export SHELL='/opt/homebrew/bin/zsh'
 export GOPATH=$HOME/.go/current
 # User configuration
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOROOT/bin
