@@ -32,6 +32,5 @@ nodenv init
 brew tap universal-ctags/universal-ctags
 brew install universal-ctags
 
-brew tap peco/peco
 brew install peco
 ln -s $DOTFILE_DIR/.config/peco $HOME/.config
