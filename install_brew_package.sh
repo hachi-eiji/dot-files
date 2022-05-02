@@ -24,7 +24,8 @@ brew install zsh git \
   goenv \
   icu4c \
   pyenv pyenv-virtualenv \
-  pt
+  pt \
+  git-secrets
 
 rbenv init
 nodenv init
