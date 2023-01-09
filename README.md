@@ -1,3 +1,7 @@
+```
+Archive is Repo. see: https://github.com/hachi-eiji/dotfiles
+```
+
 dot-files
 =========
 
